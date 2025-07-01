@@ -151,7 +151,7 @@ a {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(106, 5, 127, 0.7), rgba(138, 43, 226, 0.7)), url('../images/aeryn_salon_background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(106, 5, 127, 0.7), rgba(138, 43, 226, 0.7)), url('https://via.placeholder.com/1600x600/6A057F/ffffff?text=AERYN+SALON+Background') no-repeat center center/cover;
     color: var(--text-light);
     text-align: center;
     padding: 100px 20px;
@@ -314,36 +314,6 @@ section {
     color: var(--primary-purple);
 }
 
-/* Social Icons Styling */
-.social-icons {
-    margin-top: 20px;
-    margin-bottom: 30px; /* Jarak antara ikon dan teks di bawahnya */
-    display: flex;
-    justify-content: center;
-    gap: 25px; /* Jarak antar ikon */
-}
-
-.social-icons a {
-    color: var(--text-light); /* Warna ikon, disesuaikan dengan latar belakang ungu */
-    font-size: 2.8em; /* Ukuran ikon */
-    transition: color 0.3s ease, transform 0.3s ease;
-    text-decoration: none; /* Hilangkan underline */
-}
-
-.social-icons a:hover {
-    color: var(--accent-gold); /* Ubah warna saat hover, gunakan warna aksen */
-    transform: translateY(-5px); /* Efek sedikit terangkat saat hover */
-}
-
-/* Menyesuaikan jarak p di bagian kontak agar tidak terlalu dekat dengan ikon */
-.contact-section p {
-    margin-bottom: 10px; /* Default */
-    margin-top: 0; /* Pastikan tidak ada margin atas berlebih */
-}
-
-.contact-section p:first-of-type { /* Untuk paragraf pertama setelah ikon */
-    margin-top: 20px;
-}
 
 /* Footer */
 .main-footer {
@@ -416,4 +386,35 @@ section {
     h3 {
         font-size: 1.8em;
     }
+}
+
+/* Social Icons Styling */
+.social-icons {
+    margin-top: 20px;
+    margin-bottom: 30px; /* Jarak antara ikon dan teks di bawahnya */
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Jarak antar ikon */
+}
+
+.social-icons a {
+    color: var(--text-light); /* Warna ikon, disesuaikan dengan latar belakang ungu */
+    font-size: 2.8em; /* Ukuran ikon */
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Hilangkan underline */
+}
+
+.social-icons a:hover {
+    color: var(--accent-gold); /* Ubah warna saat hover, gunakan warna aksen */
+    transform: translateY(-5px); /* Efek sedikit terangkat saat hover */
+}
+
+/* Menyesuaikan jarak p di bagian kontak agar tidak terlalu dekat dengan ikon */
+.contact-section p {
+    margin-bottom: 10px; /* Default */
+    margin-top: 0; /* Pastikan tidak ada margin atas berlebih */
+}
+
+.contact-section p:first-of-type { /* Untuk paragraf pertama setelah ikon */
+    margin-top: 20px;
 }
