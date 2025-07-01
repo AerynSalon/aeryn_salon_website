@@ -151,7 +151,7 @@ a {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(106, 5, 127, 0.7), rgba(138, 43, 226, 0.7)), <img src="../aeryn1.jpg"> no-repeat center center/cover;
+    background: linear-gradient(rgba(106, 5, 127, 0.7), rgba(138, 43, 226, 0.7)), <img src="aeryn1.jpg"> no-repeat center center/cover;
     color: var(--text-light);
     text-align: center;
     padding: 100px 20px;
