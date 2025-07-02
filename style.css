@@ -418,3 +418,54 @@ section {
 .contact-section p:first-of-type { /* Untuk paragraf pertama setelah ikon */
     margin-top: 20px;
 }
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Styling untuk setiap item galeri (pembungkus gambar dan judul) */
+.gallery-item {
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--light-purple); /* Border tipis agar terlihat modern */
+    overflow: hidden; /* Pastikan gambar tidak keluar dari border-radius */
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px; /* Tinggi tetap untuk konsistensi */
+    object-fit: cover;
+    display: block; /* Menghilangkan ruang kosong di bawah gambar */
+    /* border-radius tidak perlu lagi di sini karena sudah di gallery-item */
+    border: none; /* Hilangkan border yang sebelumnya ada di img */
+}
+
+.gallery-item h4 {
+    font-size: 1.1em; /* Ukuran font untuk judul galeri */
+    color: var(--primary-purple);
+    margin-top: 15px; /* Jarak dari gambar */
+    margin-bottom: 15px; /* Jarak dari bawah item */
+    padding: 0 10px; /* Sedikit padding samping */
+    text-align: center;
+}
+
+/* Responsive Design untuk galeri */
+@media (max-width: 480px) {
+    .gallery-item img {
+        height: 200px; /* Sesuaikan tinggi gambar di layar kecil */
+    }
+    .gallery-item h4 {
+        font-size: 1em;
+    }
+}
