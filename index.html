@@ -143,8 +143,8 @@
 </div>
 
 <script>
-  // Ambil data jumlah kunjungan global dari CountAPI
-  fetch('https://api.countapi.xyz/hit/aerynsalon.github.io/visits')
+  // Gunakan namespace unik agar GitHub Pages bisa tersimpan dengan benar
+  fetch('https://api.countapi.xyz/hit/aerynsalon-website.github.io/visitor_count')
     .then(res => res.json())
     .then(data => {
       document.getElementById('count').innerText = data.value.toLocaleString('id-ID');
@@ -156,6 +156,7 @@
 
 </body>
 </html>
+
 
 
 
