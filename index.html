@@ -133,7 +133,7 @@
             <p>&copy; 2025 AERYN SALON. Hak Cipta Dilindungi Undang-Undang.</p>
         </div>
     </footer>
-    <!-- ✅ Visitor Counter Aeryn Salon - versi JavaScript -->
+    <!-- ✅ Visitor Counter Aeryn Salon - CountAPI Version -->
 <div id="visitor-counter" style="text-align:center; margin-top:30px; padding:10px; font-family:'Poppins', sans-serif; color:#5a2cc9;">
   <p style="font-size:14px; font-weight:500;">
     👁️‍🗨️ Total Pengunjung Website:
@@ -143,28 +143,20 @@
 </div>
 
 <script>
-  // Gunakan localStorage sebagai cache sederhana
-  const key = 'aerynsalon_visitor_count';
-  let count = localStorage.getItem(key);
-
-  if (!count) {
-    // Kalau belum ada, ambil dari GitHub (via file JSON raw)
-    fetch('https://raw.githubusercontent.com/AerynSalon/aeryn_salon_website/main/visitor.json')
-      .then(res => res.json())
-      .then(data => {
-        count = data.count + 1;
-        document.getElementById('count').innerText = count.toLocaleString('id-ID');
-        // Simpan sementara di localStorage
-        localStorage.setItem(key, count);
-      })
-      .catch(() => document.getElementById('count').innerText = 'Gagal memuat');
-  } else {
-    document.getElementById('count').innerText = count.toLocaleString('id-ID');
-  }
+  // Ambil data jumlah kunjungan global dari CountAPI
+  fetch('https://api.countapi.xyz/hit/aerynsalon.github.io/visits')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('count').innerText = data.value.toLocaleString('id-ID');
+    })
+    .catch(() => {
+      document.getElementById('count').innerText = 'Gagal memuat';
+    });
 </script>
-    
+
 </body>
 </html>
+
 
 
 
