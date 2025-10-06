@@ -133,17 +133,38 @@
             <p>&copy; 2025 AERYN SALON. Hak Cipta Dilindungi Undang-Undang.</p>
         </div>
     </footer>
-    <!-- ✅ Visitor Counter versi fix -->
-<div style="text-align:center; margin-top:40px; padding:10px; font-family:'Poppins', sans-serif; color:#5a2cc9;">
+    <!-- ✅ Visitor Counter Aeryn Salon - versi JavaScript -->
+<div id="visitor-counter" style="text-align:center; margin-top:30px; padding:10px; font-family:'Poppins', sans-serif; color:#5a2cc9;">
   <p style="font-size:14px; font-weight:500;">
     👁️‍🗨️ Total Pengunjung Website:
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Faerynsalon.github.io%2Faeryn_salon_website&count_bg=%23845EFF&title_bg=%23555555&icon=people.svg&icon_color=%23FFFFFF&title=visits&edge_flat=false" alt="visitor counter" style="vertical-align:middle; margin-left:5px;">
+    <span id="count" style="font-weight:bold;">memuat...</span>
   </p>
   <p style="font-size:12px; color:#999;">© 2025 Aeryn Salon | Jalan Limo Raya, Depok</p>
 </div>
 
+<script>
+  // Gunakan localStorage sebagai cache sederhana
+  const key = 'aerynsalon_visitor_count';
+  let count = localStorage.getItem(key);
 
+  if (!count) {
+    // Kalau belum ada, ambil dari GitHub (via file JSON raw)
+    fetch('https://raw.githubusercontent.com/AerynSalon/aeryn_salon_website/main/visitor.json')
+      .then(res => res.json())
+      .then(data => {
+        count = data.count + 1;
+        document.getElementById('count').innerText = count.toLocaleString('id-ID');
+        // Simpan sementara di localStorage
+        localStorage.setItem(key, count);
+      })
+      .catch(() => document.getElementById('count').innerText = 'Gagal memuat');
+  } else {
+    document.getElementById('count').innerText = count.toLocaleString('id-ID');
+  }
+</script>
+    
 </body>
 </html>
+
 
 
