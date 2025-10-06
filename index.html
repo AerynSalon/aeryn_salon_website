@@ -143,19 +143,23 @@
 </div>
 
 <script>
-  // Gunakan namespace unik agar GitHub Pages bisa tersimpan dengan benar
-  fetch('https://api.countapi.xyz/hit/aerynsalon-website.github.io/visitor_count')
+  // Versi kompatibel untuk GitHub Pages - via Cloudflare proxy agar aman HTTPS
+  const counter = document.getElementById('count');
+
+  fetch('https://corsproxy.io/?https://api.countapi.xyz/hit/aerynsalon.github.io/visitor_count')
     .then(res => res.json())
     .then(data => {
-      document.getElementById('count').innerText = data.value.toLocaleString('id-ID');
+      counter.innerText = data.value.toLocaleString('id-ID');
     })
-    .catch(() => {
-      document.getElementById('count').innerText = 'Gagal memuat';
+    .catch(err => {
+      console.error('Error:', err);
+      counter.innerText = 'Gagal memuat';
     });
 </script>
 
 </body>
 </html>
+
 
 
 
