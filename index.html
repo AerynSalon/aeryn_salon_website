@@ -1,0 +1,2923 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AERYN SALON - Luxury Beauty, Hair Styling & Color Lounge</title>
+  <meta name="description" content="Aeryn Salon & Beauty Lounge - Destinasi perawatan rambut dan kecantikan eksklusif dengan sentuhan master stylist. Signature Balayage, Keratin Treatment, Hair Coloring & Nail Art.">
+  <meta name="keywords" content="Aeryn Salon, salon kecantikan, balayage, keratin treatment, hair coloring, haircut, potong rambut modern, aerynsalon.my.id">
+  <meta name="theme-color" content="#0F0A16">
+
+  <!-- OpenGraph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aerynsalon.my.id/">
+  <meta property="og:title" content="AERYN SALON - Luxury Beauty & Hair Lounge">
+  <meta property="og:description" content="Where Artistry Meets Elegance. Rasakan pengalaman perawatan rambut dan kecantikan kelas atas bersama master stylist profesional.">
+  <meta property="og:image" content="https://aerynsalon.my.id/images/Ashblonde%20bayalage.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/Haircolor_icon.jpg">
+
+  <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Luxury Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org Structured Data for Local Business / Beauty Salon -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Aeryn Salon",
+    "image": "https://aerynsalon.my.id/images/Ashblonde%20bayalage.jpg",
+    "url": "https://aerynsalon.my.id",
+    "telephone": "+6281316801311",
+    "email": "aerynsalon@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Limo Raya No.39 (Depan SPBU VIVO)",
+      "addressLocality": "Limo, Kota Depok",
+      "addressRegion": "Jawa Barat",
+      "postalCode": "16515",
+      "addressCountry": "ID"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -6.3671201,
+      "longitude": 106.7749544
+    },
+    "hasMap": "https://www.google.com/maps/dir//AERYN+SALON,+Jl.+Limo+Raya+No.39,+Limo,+Kec.+Limo,+Kota+Depok,+Jawa+Barat+16515/@-6.3671201,106.7749544,17z/",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container">
+      <div class="announcement-info">
+        <span class="announcement-item">
+          <span class="pulse-dot"></span> <strong>Jam Buka:</strong> OPEN EVERYDAY, 09.00 AM – 19.00 PM WIB
+        </span>
+        <span class="announcement-item">
+          <i class="fa-solid fa-sparkles"></i> Nikmati Konsultasi Rambut Eksklusif bersama Senior Stylist
+        </span>
+      </div>
+      <div class="announcement-info">
+        <a href="https://wa.me/6281316801311" target="_blank" class="announcement-item">
+          <i class="fa-brands fa-whatsapp"></i> Hotline Bisnis: 0813 1680 1311
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Luxury Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo">
+        <span class="brand-title">AERYN SALON</span>
+        <span class="brand-subtitle">Beauty &amp; Hair Lounge</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav">
+        <a href="#home" class="active">Beranda</a>
+        <a href="#pillars">Keunggulan</a>
+        <a href="#services">Layanan &amp; Treatment</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#reviews">Testimoni</a>
+        <a href="#location">Lokasi</a>
+      </nav>
+
+      <!-- Header CTA Buttons -->
+      <div class="header-cta-group">
+        <a href="#booking" class="btn btn-gold btn-sm">
+          <i class="fa-solid fa-calendar-check"></i> Book Appointment
+        </a>
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div id="drawerOverlay" class="drawer-overlay"></div>
+  <aside id="mobileDrawer" class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <div class="brand-logo">
+          <span class="brand-title" style="color:#FFF;">AERYN SALON</span>
+          <span class="brand-subtitle">Beauty &amp; Hair Lounge</span>
+        </div>
+        <button id="drawerClose" class="drawer-close" aria-label="Tutup Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="drawer-links">
+        <a href="#home"><i class="fa-solid fa-house"></i> Beranda</a>
+        <a href="#pillars"><i class="fa-solid fa-gem"></i> Keunggulan</a>
+        <a href="#services"><i class="fa-solid fa-wand-magic-sparkles"></i> Layanan &amp; Treatment</a>
+        <a href="#lookbook"><i class="fa-solid fa-images"></i> Lookbook Galeri</a>
+        <a href="#about"><i class="fa-solid fa-circle-info"></i> Tentang Kami</a>
+        <a href="#reviews"><i class="fa-solid fa-star"></i> Testimoni Klien</a>
+        <a href="#location"><i class="fa-solid fa-location-dot"></i> Lokasi &amp; Jam Buka</a>
+      </nav>
+    </div>
+
+    <div>
+      <a href="https://wa.me/6281316801311" target="_blank" class="btn btn-gold" style="width:100%; margin-bottom: 14px;">
+        <i class="fa-brands fa-whatsapp"></i> Chat Hotline Bisnis
+      </a>
+      <p style="font-size:0.75rem; color:#888; text-align:center;">Official Site: aerynsalon.my.id</p>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-media-bg">
+      <video class="hero-video" autoplay muted loop playsinline poster="images/Caramel%20Blonde%20full%20color.jpg">
+        <source src="images/caramel_blonde_running_text.mp4" type="video/mp4">
+        <img src="images/Caramel%20Blonde%20full%20color.jpg" alt="Aeryn Salon Signature Hair Styling" class="hero-img">
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-crown"></i> Official Salon &amp; Hair Care — aerynsalon.my.id
+        </div>
+        <h1 class="hero-title">
+          Where Artistry Meets <span class="gold-gradient-text gold">Elegance</span>
+        </h1>
+        <p class="hero-desc">
+          Wujudkan kilau rambut impian dan penampilan memukau bersama master stylist kami. Dapatkan perawatan balayage presisi, keratin restoration, serta perawatan rambut premium dengan standar kenyamanan butik mewah.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#booking" class="btn btn-gold">
+            <i class="fa-solid fa-calendar-plus"></i> Reservasi Jadwal Sekarang
+          </a>
+          <a href="#services" class="btn btn-outline-white">
+            <i class="fa-solid fa-eye"></i> Lihat Menu Layanan
+          </a>
+        </div>
+
+        <div class="hero-stats-strip">
+          <div class="hero-stat-item">
+            <h3>10+ Thn</h3>
+            <p>Pengalaman Stylist</p>
+          </div>
+          <div class="hero-stat-item">
+            <h3>5.000+</h3>
+            <p>Transformasi Sukses</p>
+          </div>
+          <div class="hero-stat-item">
+            <h3>100%</h3>
+            <p>Produk Kualitas Premium</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars Section (Why Choose Aeryn Salon) -->
+  <section id="pillars" class="pillars-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Keunggulan Eksklusif</span>
+        <h2 class="section-title">Dedikasi Kemewahan &amp; Kualitas Terbaik</h2>
+        <p class="section-subtitle">Setiap helai rambut Anda berharga. Kami mengombinasikan keahlian artistik dengan formula perawatan internasional untuk hasil yang sehat, lembut, dan memesona.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <i class="fa-solid fa-scissors"></i>
+          </div>
+          <h4>Master Stylists &amp; Colorists</h4>
+          <p>Dikerjakan oleh profesional bersertifikat dengan teknik pewarnaan modern seperti Balayage, Airtouch, dan Korean Perm.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <i class="fa-solid fa-bottle-droplet"></i>
+          </div>
+          <h4>Formula Premium Internasional</h4>
+          <p>Menggunakan produk berkualitas tinggi yang melindungi batang rambut, mempertahankan kelembutan, dan mencegah kerapuhan.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <i class="fa-solid fa-couch"></i>
+          </div>
+          <h4>Private &amp; Comfort Lounge</h4>
+          <p>Suasana salon elegan, ruangan ber-AC sejuk dan tenang, serta musik ambient menenangkan untuk pengalaman perawatan yang rileks.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <h4>Personalized Consultation</h4>
+          <p>Konsultasi menyeluruh untuk menentukan model potongan dan undertone warna rambut yang paling sesuai dengan karakter Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Treatment Menu -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Menu Perawatan</span>
+        <h2 class="section-title">Signature Services &amp; Treatment Menu</h2>
+        <p class="section-subtitle">Pilihan treatment eksklusif untuk rambut, kuku, dan kecantikan Anda dengan sentuhan master stylist dan formula berkualitas tinggi.</p>
+      </div>
+
+      <!-- Service Filter Tabs -->
+      <div class="service-tabs">
+        <button class="tab-btn active" data-filter="all">Semua Layanan</button>
+        <button class="tab-btn" data-filter="coloring">Hair Coloring &amp; Balayage</button>
+        <button class="tab-btn" data-filter="treatment">Keratin &amp; Smoothing</button>
+        <button class="tab-btn" data-filter="haircut">Haircut &amp; Styling</button>
+        <button class="tab-btn" data-filter="nail">Nail &amp; Makeup</button>
+      </div>
+
+      <!-- Service Cards Grid -->
+      <div class="services-grid">
+
+        <!-- Card 1 -->
+        <div class="service-card" data-category="coloring">
+          <div class="service-img-wrapper">
+            <img src="images/Caramel%20Blonde%20full%20color.jpg" alt="Caramel Blonde Full Color" loading="lazy">
+            <span class="service-tag-badge">Best Seller</span>
+          </div>
+          <div class="service-content">
+            <h4>Caramel Blonde Full Color</h4>
+            <p class="service-desc">Warna pirang karamel hangat yang memberikan nuansa cerah alami pada kulit wajah Anda dengan kilau berkilau.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-sparkles"></i> Konsultasi Personal &amp; Perawatan Premium</span>
+            </div>
+            <a href="#booking" class="btn btn-outline-gold btn-sm service-action-btn quick-book-btn" data-service="Caramel Blonde Full Color">
+              <i class="fa-solid fa-check"></i> Reservasi Layanan
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card" data-category="coloring">
+          <div class="service-img-wrapper">
+            <img src="images/Ashblonde%20bayalage.jpg" alt="Ash Blonde Balayage Signature" loading="lazy">
+            <span class="service-tag-badge">Signature Look</span>
+          </div>
+          <div class="service-content">
+            <h4>Ash Blonde Balayage</h4>
+            <p class="service-desc">Gradasi sapuan warna abu-abu pirang dingin yang berdimensi mewah, modern, dan tidak meninggalkan garis kontras saat rambut tumbuh.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-sparkles"></i> Signature Balayage &amp; Toning</span>
+            </div>
+            <a href="#booking" class="btn btn-outline-gold btn-sm service-action-btn quick-book-btn" data-service="Ash Blonde Balayage">
+              <i class="fa-solid fa-check"></i> Reservasi Layanan
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card" data-category="coloring">
+          <div class="service-img-wrapper">
+            <img src="images/Ashbrown%20highlight%20balayage.jpg" alt="Ash Brown Highlight Balayage" loading="lazy">
+            <span class="service-tag-badge">Most Elegant</span>
+          </div>
+          <div class="service-content">
+            <h4>Ash Brown Highlight Balayage</h4>
+            <p class="service-desc">Kombinasi cokelat dingin dengan highlight halus yang menciptakan ilusi rambut lebih bervolume, elegan untuk aktivitas harian.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-sparkles"></i> Multi-Dimensional Highlight</span>
+            </div>
+            <a href="#booking" class="btn btn-outline-gold btn-sm service-action-btn quick-book-btn" data-service="Ash Brown Highlight Balayage">
+              <i class="fa-solid fa-check"></i> Reservasi Layanan
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card" data-category="treatment">
+          <div class="service-img-wrapper">
+            <img src="images/Hair%20keratin.jpg" alt="Hair Keratin & Smoothing Restoration" loading="lazy">
+            <span class="service-tag-badge">Intense Care</span>
+          </div>
+          <div class="service-content">
+            <h4>Hair Keratin Restoration</h4>
+            <p class="service-desc">Perawatan deep-repair keratin untuk memperbaiki rambut rusak, bercabang, atau mengembang agar lurus alami, berkilau, dan lembut sutra.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-sparkles"></i> Deep Repair &amp; Keratin Smooth</span>
+            </div>
+            <a href="#booking" class="btn btn-outline-gold btn-sm service-action-btn quick-book-btn" data-service="Hair Keratin Restoration">
+              <i class="fa-solid fa-check"></i> Reservasi Layanan
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card" data-category="coloring">
+          <div class="service-img-wrapper">
+            <img src="images/Milk%20tea%20ashblonde.jpg" alt="Milk Tea Ash Blonde" loading="lazy">
+            <span class="service-tag-badge">Trending</span>
+          </div>
+          <div class="service-content">
+            <h4>Milk Tea Ash Blonde</h4>
+            <p class="service-desc">Nuansa warna teh susu creamy dengan undertone ashy lembut. Sangat populer untuk tampilan ala selebriti Korea yang manis dan modis.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-sparkles"></i> Trendy Asian Ash Palette</span>
+            </div>
+            <a href="#booking" class="btn btn-outline-gold btn-sm service-action-btn quick-book-btn" data-service="Milk Tea Ash Blonde">
+              <i class="fa-solid fa-check"></i> Reservasi Layanan
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card" data-category="coloring">
+          <div class="service-img-wrapper">
+            <img src="images/ash%20blue%20hair%20color.jpg" alt="Ash Blue Creative Color" loading="lazy">
+            <span class="service-tag-badge">Creative Shades</span>
+          </div>
+          <div class="service-content">
+            <h4>Ash Blue Metallic Shades</h4>
+            <p class="service-desc">Pewarnaan berani bernuansa biru keabuan metalik yang eksentrik, berkelas, dan memikat perhatian dalam setiap pencahayaan.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-sparkles"></i> Haute Couture Creative Color</span>
+            </div>
+            <a href="#booking" class="btn btn-outline-gold btn-sm service-action-btn quick-book-btn" data-service="Ash Blue Metallic Shades">
+              <i class="fa-solid fa-check"></i> Reservasi Layanan
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="service-card" data-category="haircut">
+          <div class="service-img-wrapper">
+            <img src="images/haircut_icon.jpg" alt="Precision Haircut & Styling" loading="lazy">
+            <span class="service-tag-badge">Essential</span>
+          </div>
+          <div class="service-content">
+            <h4>Precision Haircut &amp; Blow Dry</h4>
+            <p class="service-desc">Guntingan presisi disesuaikan struktur wajah dan tekstur rambut, termasuk keramas relaksasi, hair wash mewah, dan professional blow styling.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-sparkles"></i> Wash, Relax Massage &amp; Blow Dry</span>
+            </div>
+            <a href="#booking" class="btn btn-outline-gold btn-sm service-action-btn quick-book-btn" data-service="Precision Haircut & Blow Dry">
+              <i class="fa-solid fa-check"></i> Reservasi Layanan
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="service-card" data-category="treatment">
+          <div class="service-img-wrapper">
+            <img src="images/perawatan_rambut_icon.jpg" alt="Spa Scalp & Hair Treatment" loading="lazy">
+            <span class="service-tag-badge">Relaxation</span>
+          </div>
+          <div class="service-content">
+            <h4>Spa Scalp &amp; Deep Hair Mask</h4>
+            <p class="service-desc">Terapi kesehatan kulit kepala, pembersihan ketombe/minyak berlebih, dipadukan pijat relaksasi leher dan serum nutrisi batang rambut.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-sparkles"></i> Scalp Therapy &amp; Hair Mask</span>
+            </div>
+            <a href="#booking" class="btn btn-outline-gold btn-sm service-action-btn quick-book-btn" data-service="Spa Scalp & Deep Hair Mask">
+              <i class="fa-solid fa-check"></i> Reservasi Layanan
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="service-card" data-category="nail">
+          <div class="service-img-wrapper">
+            <img src="images/manicure_icon.jpg" alt="Manicure & Nail Art" loading="lazy">
+            <span class="service-tag-badge">Beauty Care</span>
+          </div>
+          <div class="service-content">
+            <h4>Glamour Manicure &amp; Nail Art</h4>
+            <p class="service-desc">Pembersihan kutikula profesional, pembentukan kuku, gel polish berkualitas tinggi yang tahan lama dengan desain nail art mewah.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-sparkles"></i> Cuticle Care &amp; Gel Nail Art</span>
+            </div>
+            <a href="#booking" class="btn btn-outline-gold btn-sm service-action-btn quick-book-btn" data-service="Glamour Manicure & Nail Art">
+              <i class="fa-solid fa-check"></i> Reservasi Layanan
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Complete Treatment Menu Catalog -->
+<div class="treatment-catalog-wrapper" id="treatmentCatalog">
+  <div class="text-center" style="margin-top: 60px; margin-bottom: 36px;">
+    <span class="section-tag"><i class="fa-solid fa-list-check"></i> Menu Lengkap Salon</span>
+    <h3 class="section-title" style="font-size: 2.2rem;">Daftar Seluruh Layanan &amp; Treatment</h3>
+    <p class="section-subtitle">Jelajahi seluruh kategori perawatan kecantikan kami. Pilih layanan untuk reservasi via WhatsApp.</p>
+  </div>
+  <div class="catalog-accordion-grid">
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-scissors"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Hair Cut Services</h4>
+          <span>12 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Children's Bangs Trim</strong>
+            <p>Merapikan poni anak dengan teknik presisi.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Children's Bangs Trim" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Curtain Bangs Cut</strong>
+            <p>Potongan poni curtain bangs yang membingkai wajah manis alami.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Curtain Bangs Cut" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Kids Hair Cut</strong>
+            <p>Gunting rambut anak dengan pendekatan sabar dan rapi.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Kids Hair Cut" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Women's Hair Cut</strong>
+            <p>Potongan rambut wanita modern disesuaikan dengan bentuk wajah.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Women's Hair Cut" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Trimming</strong>
+            <p>Merapikan ujung rambut bercabang agar kembali sehat dan segar.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Trimming" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Layered Cut (Butterfly / Wolf / Long Layer / French / Hush Cut)</strong>
+            <p>Teknik gunting bertekstur modern untuk volume rambut dinamis.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Layered Cut (Butterfly / Wolf / Long Layer / French / Hush Cut)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Wash</strong>
+            <p>Pembersihan rambut dan kulit kepala mendalam dengan scalp massage.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Wash" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Blow In / Catok In Short</strong>
+            <p>Penataan blow dan catok rapi bervolume untuk rambut pendek.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Blow In / Catok In Short" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Blow In / Catok In Long</strong>
+            <p>Penataan blow glamor dan lurus berkilau untuk rambut panjang.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Blow In / Catok In Long" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Curly Styling</strong>
+            <p>Styling gelombang keriting tahan lama untuk acara spesial.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Curly Styling" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Wave Curly Styling</strong>
+            <p>Gelombang beachy wave lembut untuk tampilan effortless chic.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Wave Curly Styling" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Full Hair Makeover</strong>
+            <p>Transformasi total gaya rambut dari model hingga penataan akhir.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Full Hair Makeover" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="catalog-note-box"><i class="fa-solid fa-circle-info"></i> Notes: Untuk hasil optimal wajib wash + styling.</div>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-bottle-droplet"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Hair Treatment</h4>
+          <span>11 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Creambath Tradisional (Lidah Buaya, Alpukat, Ginseng)</strong>
+            <p>Nutrisi alami dari ekstrak herbal pilihan untuk akar rambut kuat.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Creambath Tradisional (Lidah Buaya, Alpukat, Ginseng)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Creambath Milk</strong>
+            <p>Perawatan protein susu untuk melembutkan helai rambut kusam.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Creambath Milk" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Creambath Makarizo (Coklat, Strawberry, Vanila, Mint)</strong>
+            <p>Sensasi aroma aromaterapi dan kesegaran relaksasi kulit kepala.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Creambath Makarizo (Coklat, Strawberry, Vanila, Mint)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Nourishing Creambath Keratin</strong>
+            <p>Kombinasi creambath dan keratin untuk menutrisi batang rambut rapuh.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Nourishing Creambath Keratin" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Spa Keratin</strong>
+            <p>Perawatan spa mendalam mengembalikan elastisitas rambut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Spa Keratin" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Spa L'Oreal</strong>
+            <p>Formula profesional L'Oreal untuk perbaikan serat rambut intensif.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Spa L'Oreal" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Relaxing Hair Spa</strong>
+            <p>Spa relaksasi dengan pijatan lembut di leher dan bahu.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Relaxing Hair Spa" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Mask Keratin</strong>
+            <p>Masker konsentrat keratin tinggi untuk hidrasi maksimal.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Mask Keratin" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Nourishing Hair Mask</strong>
+            <p>Masker pelembap intensif untuk rambut kering dan mengembang.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Nourishing Hair Mask" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Repair & Damage Control Mask</strong>
+            <p>Formula khusus memulihkan rambut yang rusak akibat proses kimia.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Repair & Damage Control Mask" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Extra Charge (Rambut Tebal / Extra Long)</strong>
+            <p>Penyesuaian takaran formula untuk rambut ekstra tebal dan panjang.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Extra Charge (Rambut Tebal / Extra Long)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-palette"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Hair Coloring</h4>
+          <span>9 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Toning</strong>
+            <p>Menetralkan undertone kekuningan dan menyegarkan kilau warna rambut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Toning" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Peek a Boo / Hidden Color</strong>
+            <p>Sentuhan warna kontras tersembunyi di lapisan dalam rambut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Peek a Boo / Hidden Color" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Bleaching</strong>
+            <p>Pencerahan warna dasar rambut dengan protektor serat rambut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Bleaching" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Highlight</strong>
+            <p>Dimensi garis warna kontras yang memberi efek tekstur berkilau.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Highlight" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Balayage</strong>
+            <p>Teknik gradasi sapuan kuas halus dari gelap ke terang yang seamless.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Balayage" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Basic Color</strong>
+            <p>Pewarnaan satu warna menyeluruh yang pekat dan tahan lama.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Basic Color" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Full Head Fashion Color</strong>
+            <p>Pewarnaan warna-warna tren fashion terkini di seluruh rambut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Full Head Fashion Color" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Extra Olaplex Protection</strong>
+            <p>Perlindungan ikatan disulfida rambut saat proses kimia berlangsung.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Extra Olaplex Protection" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Extra Smartplex Protection</strong>
+            <p>Formula penguat ikatan rambut agar tetap lembut dan tidak rapuh.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Extra Smartplex Protection" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Hair Keratin</h4>
+          <span>2 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Keratin Filler</strong>
+            <p>Mengisi pori-pori batang rambut yang keropos agar padat kembali.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Keratin Filler" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Keratin Treatment</strong>
+            <p>Perawatan keratin premium untuk rambut lurus alami, lembut, dan bebas kusut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Keratin Treatment" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-fire"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Hair Straightening</h4>
+          <span>4 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Signature Silk Straight</strong>
+            <p>Pelurusan rambut jatuh lurus berkilau bagai sutra alami.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Signature Silk Straight" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Collagen Smoothing Treatment</strong>
+            <p>Smoothing diperkaya nutrisi kolagen untuk kelembutan ekstra.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Collagen Smoothing Treatment" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Advanced Keratin Smoothing</strong>
+            <p>Perpaduan pelurusan dan nutrisi keratin yang menjaga elastisitas rambut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Advanced Keratin Smoothing" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Keratin Blow Perm (Korean Wave)</strong>
+            <p>Teknik pelurusan dengan lengkungan bervolume natural khas Korea.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Keratin Blow Perm (Korean Wave)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-wind"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Wave Permanent</h4>
+          <span>4 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Down Perm</strong>
+            <p>Merapikan rambut samping yang mengembang agar turun rapi menempel.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Down Perm" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Traditional Permanent</strong>
+            <p>Pengeritingan permanen klasik untuk volume rambut tebal bervolume.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Traditional Permanent" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Blow Perm</strong>
+            <p>Gelombang permanen natural yang mudah di-styling sehari-hari.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Blow Perm" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Extra Tebal Charge</strong>
+            <p>Penyesuaian formula untuk rambut berdensitas tinggi.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Extra Tebal Charge" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-eye"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Eyebrow</h4>
+          <span>2 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Brow Shaping</strong>
+            <p>Pembentukan garis alis simetris yang mempertegas bingkai wajah.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Brow Shaping" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Henna Brow</strong>
+            <p>Pewarnaan alis menggunakan henna herbal alami yang tahan berminggu-minggu.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Henna Brow" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-ribbon"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Hair Extension</h4>
+          <span>5 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Extension Perhelai</strong>
+            <p>Penyambungan rambut asli per helai untuk panjang instan.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Extension Perhelai" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Pemasangan Ring</strong>
+            <p>Teknik sambung ring mikro tanpa lem atau panas kimiawi.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Pemasangan Ring" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Pemasangan Ring Kepang</strong>
+            <p>Kombinasi kepang mikro dan ring untuk ketahanan ekstra kuat.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Pemasangan Ring Kepang" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Pemasangan Kepang</strong>
+            <p>Teknik anyam kepang tradisional yang rapi dan kuat.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Pemasangan Kepang" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Remove Service Hair Extension</strong>
+            <p>Pelepasan extension profesional tanpa merusak rambut asli.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Remove Service Hair Extension" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Nail Services</h4>
+          <span>12 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Express Manicure</strong>
+            <p>Pembersihan cepat kuku dan kutikula untuk tampilan rapi seketika.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Express Manicure" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Manicure</strong>
+            <p>Perawatan kuku tangan lengkap, pembentukan, dan pengkilapan kuku.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Manicure" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Spa Manicure (Scrub & Spa Salt)</strong>
+            <p>Manicure mewah dengan lulur garam spa dan pijatan tangan lembut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Spa Manicure (Scrub & Spa Salt)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Pedicure</strong>
+            <p>Perawatan kuku dan tumit kaki untuk kebersihan optimal.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Pedicure" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Spa Pedicure (Scrub & Spa Salt)</strong>
+            <p>Eksfoliasi kulit mati kaki dengan scrub relaksasi spa.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Spa Pedicure (Scrub & Spa Salt)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Manicure & Pedicure Package</strong>
+            <p>Paket lengkap perawatan tangan dan kaki terpadu.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Manicure & Pedicure Package" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Gel Polish (Hands)</strong>
+            <p>Pewarnaan cat kuku gel tangan tahan lama anti-gores.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Gel Polish (Hands)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Gel Polish (Feet)</strong>
+            <p>Pewarnaan cat kuku gel kaki dengan kilau prima.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Gel Polish (Feet)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Gel Polish Removal</strong>
+            <p>Pembersihan kutek gel aman tanpa mengikis lapisan kuku.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Gel Polish Removal" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Nail Tip Extension</strong>
+            <p>Penyambungan kuku instan dengan nail tip yang kuat.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Nail Tip Extension" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Acrylic Full Set</strong>
+            <p>Aplikasi kuku akrilik penuh untuk bentuk kuku sempurna.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Acrylic Full Set" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Nail Art</strong>
+            <p>Karya seni lukis dan aksesoris kuku dengan desain eksklusif.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Nail Art" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-face-smile-beam"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Facial Treatment</h4>
+          <span>5 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Brightening Facial Treatment</strong>
+            <p>Pembersihan komedo dan masker pencerah untuk kulit glowing sehat.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Brightening Facial Treatment" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Anti-Aging Facial Therapy (Biakos Professional)</strong>
+            <p>Terapi peremajaan kulit menggunakan formula Biakos profesional.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Anti-Aging Facial Therapy (Biakos Professional)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Vitamin C Brightening Mask (Additional)</strong>
+            <p>Tambahan masker vitamin C konsentrat tinggi untuk kecerahan instan.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Vitamin C Brightening Mask (Additional)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Anti Aging Mask (Additional)</strong>
+            <p>Tambahan masker pengencang untuk menyamarkan garis halus.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Anti Aging Mask (Additional)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hydrating Eye Mask (Additional)</strong>
+            <p>Masker hidrasi khusus area mata untuk meredakan mata lelah dan kantung mata.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hydrating Eye Mask (Additional)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-spa"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Face Spa Treatment</h4>
+          <span>3 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Therapy Mata</strong>
+            <p>Relaksasi titik-titik sekitar mata untuk menyegarkan pandangan.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Therapy Mata" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Totok Wajah</strong>
+            <p>Akupresur wajah melancarkan sirkulasi darah dan aura wajah segar.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Totok Wajah" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Totok Wajah Relaksasi</strong>
+            <p>Kombinasi totok wajah dan pijatan relaksasi menenangkan pikiran.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Totok Wajah Relaksasi" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-hot-tub-person"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Body Spa Treatment</h4>
+          <span>14 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Ratus (Herbal Steam)</strong>
+            <p>Uap rempah tradisional untuk kebersihan dan kebugaran kewanitaan.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Ratus (Herbal Steam)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Back Massage</strong>
+            <p>Pijatan punggung meredakan ketegangan otot setelah beraktivitas.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Back Massage" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Body Steam</strong>
+            <p>Sauna uap hangat membuka pori-pori dan melancarkan sirkulasi tubuh.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Body Steam" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Scraping Therapy (Kerik)</strong>
+            <p>Terapi kerik tradisional untuk meredakan masuk angin dan rasa pegal.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Scraping Therapy (Kerik)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Foot Spa</strong>
+            <p>Rendaman kaki air hangat beraroma dan pembersihan mendalam.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Foot Spa" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Foot Spa Complete</strong>
+            <p>Paket foot spa lengkap dengan scrub dan pijat refleksi kaki.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Foot Spa Complete" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Pijat Refleksi</strong>
+            <p>Penekanan titik-titik refleksi untuk menyeimbangkan energi tubuh.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Pijat Refleksi" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Pijat Refleksi Full Body</strong>
+            <p>Refleksi seluruh tubuh untuk kebugaran total.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Pijat Refleksi Full Body" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Body Scrub</strong>
+            <p>Eksfoliasi kulit tubuh mengangkat sel kulit mati agar lembut bercahaya.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Body Scrub" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Body Mask</strong>
+            <p>Masker tubuh melembapkan dan menutrisi kulit secara menyeluruh.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Body Mask" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Lulur Tradisional</strong>
+            <p>Baluran lulur rempah wangi khas putri keraton untuk kulit halus.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Lulur Tradisional" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Body Massage</strong>
+            <p>Pijatan relaksasi seluruh tubuh dengan minyak aromaterapi esensial.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Body Massage" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Lulur + Body Massage</strong>
+            <p>Paket komplit pemanjaan tubuh: pijatan relaksasi dan lulur scrub.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Lulur + Body Massage" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Body Bleaching Treatment</strong>
+            <p>Perawatan pemutih kulit tubuh yang aman dan mencerahkan merata.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Body Bleaching Treatment" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-gem"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Eyelash</h4>
+          <span>1 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Eyelash Extension</strong>
+            <p>Pemasangan bulu mata lentik alami helai demi helai yang ringan dan nyaman.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Eyelash Extension" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-brush"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Makeup</h4>
+          <span>3 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Make Up</strong>
+            <p>Riasan wajah profesional untuk wisuda, pesta, kondangan, maupun photoshoot.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Make Up" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Do</strong>
+            <p>Tata sanggul dan tatanan rambut formal elegan untuk berbagai acara penting.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Do" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Styling</strong>
+            <p>Styling rambut modis dan berkarakter sesuai tema penampilan Anda.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Styling" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <!-- Lookbook / Gallery Showcase -->
+  <section id="lookbook" class="gallery-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Portofolio Asli</span>
+        <h2 class="section-title">The Signature Lookbook</h2>
+        <p class="section-subtitle">Galeri mahakarya penataan dan pewarnaan rambut autentik oleh stylist Aeryn Salon. Klik foto untuk melihat detail resolusi tinggi.</p>
+      </div>
+
+      <!-- Gallery Filter Pills -->
+      <div class="gallery-filters">
+        <button class="gallery-filter-btn active" data-filter="all">Semua Koleksi</button>
+        <button class="gallery-filter-btn" data-filter="balayage">Balayage</button>
+        <button class="gallery-filter-btn" data-filter="blonde">Blonde &amp; Brown</button>
+        <button class="gallery-filter-btn" data-filter="keratin">Keratin Smooth</button>
+        <button class="gallery-filter-btn" data-filter="creative">Creative Colors</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+
+        <div class="gallery-item" data-category="balayage">
+          <img src="images/Ashblonde%20bayalage.jpg" alt="Ash Blonde Balayage" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Ash Blonde Balayage</h5>
+            <span>Balayage &amp; Toning</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="blonde">
+          <img src="images/Caramel%20Blonde%20full%20color.jpg" alt="Caramel Blonde Full Color" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Caramel Blonde</h5>
+            <span>Full Gloss Color</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="balayage">
+          <img src="images/Ashbrown%20highlight%20balayage.jpg" alt="Ash Brown Highlight Balayage" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Ash Brown Highlight</h5>
+            <span>Dimensional Balayage</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="keratin">
+          <img src="images/Hair%20keratin.jpg" alt="Hair Keratin Straight & Silky" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Keratin Silk Straight</h5>
+            <span>Intense Smoothing</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="blonde">
+          <img src="images/Milk%20tea%20ashblonde.jpg" alt="Milk Tea Ash Blonde" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Milk Tea Ash Blonde</h5>
+            <span>Korean Ash Tone</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="balayage">
+          <img src="images/Soft%20balayage%20ashbrown.jpg" alt="Soft Balayage Ash Brown" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Soft Ash Brown</h5>
+            <span>Natural Balayage</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="creative">
+          <img src="images/ash%20blue%20hair%20color.jpg" alt="Ash Blue Creative Color" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Ash Blue Metallic</h5>
+            <span>Avant-Garde Color</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="blonde">
+          <img src="images/coloring.jpg" alt="Vibrant Salon Coloring" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Signature Coloring Art</h5>
+            <span>Salon Studio</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="balayage creative">
+          <img src="images/filosofi_aeryn_salon.jpg" alt="Purple Lavender Balayage Aeryn Salon" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Purple Lavender Balayage</h5>
+            <span>Balayage &amp; Creative Tone</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Complete Treatment Menu Catalog -->
+<div class="treatment-catalog-wrapper" id="treatmentCatalog">
+  <div class="text-center" style="margin-top: 60px; margin-bottom: 36px;">
+    <span class="section-tag"><i class="fa-solid fa-list-check"></i> Menu Lengkap Salon</span>
+    <h3 class="section-title" style="font-size: 2.2rem;">Daftar Seluruh Layanan &amp; Treatment</h3>
+    <p class="section-subtitle">Jelajahi seluruh kategori perawatan kecantikan kami. Pilih layanan untuk reservasi via WhatsApp.</p>
+  </div>
+  <div class="catalog-accordion-grid">
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-scissors"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Hair Cut Services</h4>
+          <span>12 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Children's Bangs Trim</strong>
+            <p>Merapikan poni anak dengan teknik presisi.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Children's Bangs Trim" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Curtain Bangs Cut</strong>
+            <p>Potongan poni curtain bangs yang membingkai wajah manis alami.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Curtain Bangs Cut" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Kids Hair Cut</strong>
+            <p>Gunting rambut anak dengan pendekatan sabar dan rapi.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Kids Hair Cut" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Women's Hair Cut</strong>
+            <p>Potongan rambut wanita modern disesuaikan dengan bentuk wajah.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Women's Hair Cut" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Trimming</strong>
+            <p>Merapikan ujung rambut bercabang agar kembali sehat dan segar.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Trimming" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Layered Cut (Butterfly / Wolf / Long Layer / French / Hush Cut)</strong>
+            <p>Teknik gunting bertekstur modern untuk volume rambut dinamis.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Layered Cut (Butterfly / Wolf / Long Layer / French / Hush Cut)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Wash</strong>
+            <p>Pembersihan rambut dan kulit kepala mendalam dengan scalp massage.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Wash" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Blow In / Catok In Short</strong>
+            <p>Penataan blow dan catok rapi bervolume untuk rambut pendek.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Blow In / Catok In Short" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Blow In / Catok In Long</strong>
+            <p>Penataan blow glamor dan lurus berkilau untuk rambut panjang.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Blow In / Catok In Long" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Curly Styling</strong>
+            <p>Styling gelombang keriting tahan lama untuk acara spesial.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Curly Styling" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Wave Curly Styling</strong>
+            <p>Gelombang beachy wave lembut untuk tampilan effortless chic.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Wave Curly Styling" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Full Hair Makeover</strong>
+            <p>Transformasi total gaya rambut dari model hingga penataan akhir.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Full Hair Makeover" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="catalog-note-box"><i class="fa-solid fa-circle-info"></i> Notes: Untuk hasil optimal wajib wash + styling.</div>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-bottle-droplet"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Hair Treatment</h4>
+          <span>11 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Creambath Tradisional (Lidah Buaya, Alpukat, Ginseng)</strong>
+            <p>Nutrisi alami dari ekstrak herbal pilihan untuk akar rambut kuat.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Creambath Tradisional (Lidah Buaya, Alpukat, Ginseng)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Creambath Milk</strong>
+            <p>Perawatan protein susu untuk melembutkan helai rambut kusam.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Creambath Milk" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Creambath Makarizo (Coklat, Strawberry, Vanila, Mint)</strong>
+            <p>Sensasi aroma aromaterapi dan kesegaran relaksasi kulit kepala.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Creambath Makarizo (Coklat, Strawberry, Vanila, Mint)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Nourishing Creambath Keratin</strong>
+            <p>Kombinasi creambath dan keratin untuk menutrisi batang rambut rapuh.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Nourishing Creambath Keratin" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Spa Keratin</strong>
+            <p>Perawatan spa mendalam mengembalikan elastisitas rambut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Spa Keratin" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Spa L'Oreal</strong>
+            <p>Formula profesional L'Oreal untuk perbaikan serat rambut intensif.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Spa L'Oreal" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Relaxing Hair Spa</strong>
+            <p>Spa relaksasi dengan pijatan lembut di leher dan bahu.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Relaxing Hair Spa" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Mask Keratin</strong>
+            <p>Masker konsentrat keratin tinggi untuk hidrasi maksimal.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Mask Keratin" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Nourishing Hair Mask</strong>
+            <p>Masker pelembap intensif untuk rambut kering dan mengembang.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Nourishing Hair Mask" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Repair & Damage Control Mask</strong>
+            <p>Formula khusus memulihkan rambut yang rusak akibat proses kimia.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Repair & Damage Control Mask" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Extra Charge (Rambut Tebal / Extra Long)</strong>
+            <p>Penyesuaian takaran formula untuk rambut ekstra tebal dan panjang.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Extra Charge (Rambut Tebal / Extra Long)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-palette"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Hair Coloring</h4>
+          <span>9 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Toning</strong>
+            <p>Menetralkan undertone kekuningan dan menyegarkan kilau warna rambut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Toning" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Peek a Boo / Hidden Color</strong>
+            <p>Sentuhan warna kontras tersembunyi di lapisan dalam rambut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Peek a Boo / Hidden Color" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Bleaching</strong>
+            <p>Pencerahan warna dasar rambut dengan protektor serat rambut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Bleaching" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Highlight</strong>
+            <p>Dimensi garis warna kontras yang memberi efek tekstur berkilau.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Highlight" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Balayage</strong>
+            <p>Teknik gradasi sapuan kuas halus dari gelap ke terang yang seamless.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Balayage" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Basic Color</strong>
+            <p>Pewarnaan satu warna menyeluruh yang pekat dan tahan lama.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Basic Color" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Full Head Fashion Color</strong>
+            <p>Pewarnaan warna-warna tren fashion terkini di seluruh rambut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Full Head Fashion Color" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Extra Olaplex Protection</strong>
+            <p>Perlindungan ikatan disulfida rambut saat proses kimia berlangsung.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Extra Olaplex Protection" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Extra Smartplex Protection</strong>
+            <p>Formula penguat ikatan rambut agar tetap lembut dan tidak rapuh.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Extra Smartplex Protection" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Hair Keratin</h4>
+          <span>2 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Keratin Filler</strong>
+            <p>Mengisi pori-pori batang rambut yang keropos agar padat kembali.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Keratin Filler" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Keratin Treatment</strong>
+            <p>Perawatan keratin premium untuk rambut lurus alami, lembut, dan bebas kusut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Keratin Treatment" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-fire"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Hair Straightening</h4>
+          <span>4 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Signature Silk Straight</strong>
+            <p>Pelurusan rambut jatuh lurus berkilau bagai sutra alami.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Signature Silk Straight" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Collagen Smoothing Treatment</strong>
+            <p>Smoothing diperkaya nutrisi kolagen untuk kelembutan ekstra.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Collagen Smoothing Treatment" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Advanced Keratin Smoothing</strong>
+            <p>Perpaduan pelurusan dan nutrisi keratin yang menjaga elastisitas rambut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Advanced Keratin Smoothing" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Keratin Blow Perm (Korean Wave)</strong>
+            <p>Teknik pelurusan dengan lengkungan bervolume natural khas Korea.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Keratin Blow Perm (Korean Wave)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-wind"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Wave Permanent</h4>
+          <span>4 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Down Perm</strong>
+            <p>Merapikan rambut samping yang mengembang agar turun rapi menempel.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Down Perm" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Traditional Permanent</strong>
+            <p>Pengeritingan permanen klasik untuk volume rambut tebal bervolume.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Traditional Permanent" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Blow Perm</strong>
+            <p>Gelombang permanen natural yang mudah di-styling sehari-hari.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Blow Perm" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Extra Tebal Charge</strong>
+            <p>Penyesuaian formula untuk rambut berdensitas tinggi.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Extra Tebal Charge" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-eye"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Eyebrow</h4>
+          <span>2 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Brow Shaping</strong>
+            <p>Pembentukan garis alis simetris yang mempertegas bingkai wajah.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Brow Shaping" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Henna Brow</strong>
+            <p>Pewarnaan alis menggunakan henna herbal alami yang tahan berminggu-minggu.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Henna Brow" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-ribbon"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Hair Extension</h4>
+          <span>5 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Extension Perhelai</strong>
+            <p>Penyambungan rambut asli per helai untuk panjang instan.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Extension Perhelai" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Pemasangan Ring</strong>
+            <p>Teknik sambung ring mikro tanpa lem atau panas kimiawi.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Pemasangan Ring" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Pemasangan Ring Kepang</strong>
+            <p>Kombinasi kepang mikro dan ring untuk ketahanan ekstra kuat.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Pemasangan Ring Kepang" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Pemasangan Kepang</strong>
+            <p>Teknik anyam kepang tradisional yang rapi dan kuat.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Pemasangan Kepang" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Remove Service Hair Extension</strong>
+            <p>Pelepasan extension profesional tanpa merusak rambut asli.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Remove Service Hair Extension" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Nail Services</h4>
+          <span>12 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Express Manicure</strong>
+            <p>Pembersihan cepat kuku dan kutikula untuk tampilan rapi seketika.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Express Manicure" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Manicure</strong>
+            <p>Perawatan kuku tangan lengkap, pembentukan, dan pengkilapan kuku.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Manicure" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Spa Manicure (Scrub & Spa Salt)</strong>
+            <p>Manicure mewah dengan lulur garam spa dan pijatan tangan lembut.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Spa Manicure (Scrub & Spa Salt)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Pedicure</strong>
+            <p>Perawatan kuku dan tumit kaki untuk kebersihan optimal.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Pedicure" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Spa Pedicure (Scrub & Spa Salt)</strong>
+            <p>Eksfoliasi kulit mati kaki dengan scrub relaksasi spa.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Spa Pedicure (Scrub & Spa Salt)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Manicure & Pedicure Package</strong>
+            <p>Paket lengkap perawatan tangan dan kaki terpadu.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Manicure & Pedicure Package" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Gel Polish (Hands)</strong>
+            <p>Pewarnaan cat kuku gel tangan tahan lama anti-gores.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Gel Polish (Hands)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Gel Polish (Feet)</strong>
+            <p>Pewarnaan cat kuku gel kaki dengan kilau prima.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Gel Polish (Feet)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Gel Polish Removal</strong>
+            <p>Pembersihan kutek gel aman tanpa mengikis lapisan kuku.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Gel Polish Removal" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Nail Tip Extension</strong>
+            <p>Penyambungan kuku instan dengan nail tip yang kuat.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Nail Tip Extension" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Acrylic Full Set</strong>
+            <p>Aplikasi kuku akrilik penuh untuk bentuk kuku sempurna.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Acrylic Full Set" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Nail Art</strong>
+            <p>Karya seni lukis dan aksesoris kuku dengan desain eksklusif.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Nail Art" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-face-smile-beam"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Facial Treatment</h4>
+          <span>5 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Brightening Facial Treatment</strong>
+            <p>Pembersihan komedo dan masker pencerah untuk kulit glowing sehat.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Brightening Facial Treatment" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Anti-Aging Facial Therapy (Biakos Professional)</strong>
+            <p>Terapi peremajaan kulit menggunakan formula Biakos profesional.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Anti-Aging Facial Therapy (Biakos Professional)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Vitamin C Brightening Mask (Additional)</strong>
+            <p>Tambahan masker vitamin C konsentrat tinggi untuk kecerahan instan.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Vitamin C Brightening Mask (Additional)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Anti Aging Mask (Additional)</strong>
+            <p>Tambahan masker pengencang untuk menyamarkan garis halus.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Anti Aging Mask (Additional)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hydrating Eye Mask (Additional)</strong>
+            <p>Masker hidrasi khusus area mata untuk meredakan mata lelah dan kantung mata.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hydrating Eye Mask (Additional)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-spa"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Face Spa Treatment</h4>
+          <span>3 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Therapy Mata</strong>
+            <p>Relaksasi titik-titik sekitar mata untuk menyegarkan pandangan.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Therapy Mata" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Totok Wajah</strong>
+            <p>Akupresur wajah melancarkan sirkulasi darah dan aura wajah segar.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Totok Wajah" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Totok Wajah Relaksasi</strong>
+            <p>Kombinasi totok wajah dan pijatan relaksasi menenangkan pikiran.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Totok Wajah Relaksasi" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-hot-tub-person"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Body Spa Treatment</h4>
+          <span>14 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Ratus (Herbal Steam)</strong>
+            <p>Uap rempah tradisional untuk kebersihan dan kebugaran kewanitaan.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Ratus (Herbal Steam)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Back Massage</strong>
+            <p>Pijatan punggung meredakan ketegangan otot setelah beraktivitas.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Back Massage" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Body Steam</strong>
+            <p>Sauna uap hangat membuka pori-pori dan melancarkan sirkulasi tubuh.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Body Steam" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Scraping Therapy (Kerik)</strong>
+            <p>Terapi kerik tradisional untuk meredakan masuk angin dan rasa pegal.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Scraping Therapy (Kerik)" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Foot Spa</strong>
+            <p>Rendaman kaki air hangat beraroma dan pembersihan mendalam.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Foot Spa" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Foot Spa Complete</strong>
+            <p>Paket foot spa lengkap dengan scrub dan pijat refleksi kaki.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Foot Spa Complete" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Pijat Refleksi</strong>
+            <p>Penekanan titik-titik refleksi untuk menyeimbangkan energi tubuh.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Pijat Refleksi" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Pijat Refleksi Full Body</strong>
+            <p>Refleksi seluruh tubuh untuk kebugaran total.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Pijat Refleksi Full Body" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Body Scrub</strong>
+            <p>Eksfoliasi kulit tubuh mengangkat sel kulit mati agar lembut bercahaya.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Body Scrub" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Body Mask</strong>
+            <p>Masker tubuh melembapkan dan menutrisi kulit secara menyeluruh.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Body Mask" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Lulur Tradisional</strong>
+            <p>Baluran lulur rempah wangi khas putri keraton untuk kulit halus.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Lulur Tradisional" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Body Massage</strong>
+            <p>Pijatan relaksasi seluruh tubuh dengan minyak aromaterapi esensial.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Body Massage" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Lulur + Body Massage</strong>
+            <p>Paket komplit pemanjaan tubuh: pijatan relaksasi dan lulur scrub.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Lulur + Body Massage" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Body Bleaching Treatment</strong>
+            <p>Perawatan pemutih kulit tubuh yang aman dan mencerahkan merata.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Body Bleaching Treatment" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-gem"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Eyelash</h4>
+          <span>1 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Eyelash Extension</strong>
+            <p>Pemasangan bulu mata lentik alami helai demi helai yang ringan dan nyaman.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Eyelash Extension" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-category-card">
+      <div class="catalog-cat-header">
+        <div class="catalog-cat-icon"><i class="fa-solid fa-brush"></i></div>
+        <div class="catalog-cat-title-wrap">
+          <h4>Makeup</h4>
+          <span>3 Pilihan Treatment</span>
+        </div>
+      </div>
+      <ul class="catalog-items-list">
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Make Up</strong>
+            <p>Riasan wajah profesional untuk wisuda, pesta, kondangan, maupun photoshoot.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Make Up" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Do</strong>
+            <p>Tata sanggul dan tatanan rambut formal elegan untuk berbagai acara penting.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Do" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-info">
+            <strong>Hair Styling</strong>
+            <p>Styling rambut modis dan berkarakter sesuai tema penampilan Anda.</p>
+          </div>
+          <a href="#booking" class="btn btn-outline-gold btn-sm quick-book-btn" data-service="Hair Styling" title="Pilih Layanan Ini">
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Gallery Images -->
+  <div id="lightboxModal" class="lightbox-modal">
+    <div class="lightbox-content">
+      <button id="lightboxClose" class="lightbox-close" aria-label="Tutup Pratinjau Foto">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightboxImg" class="lightbox-img" src="" alt="Zoomed Lookbook Photo">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual-composition">
+          <img src="images/filosofi_aeryn_salon.jpg" alt="Filosofi Aeryn Salon - Master Balayage & Color Lounge" class="about-main-img">
+          <div class="about-badge-card">
+            <h4>100%</h4>
+            <p>Hygienic Tools &amp; Premium International Standard</p>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="section-tag">Filosofi Kami</span>
+          <h2>Sentuhan Kasih &amp; Keahlian untuk Pesona Anda</h2>
+          <p>
+            Di <strong>Aeryn Salon</strong>, kami percaya bahwa kecantikan sejati terpancar saat Anda merasa percaya diri dan nyaman dengan diri Anda. Setiap layanan dirancang dengan pendekatan personal yang menempatkan kesehatan rambut dan kenyamanan Anda sebagai prioritas utama.
+          </p>
+          <p>
+            Kami menggunakan teknik mutakhir dan formula pewarnaan internasional yang tidak hanya menghasilkan warna memukau, namun tetap mengunci kelembapan dan kekuatan serat rambut Anda.
+          </p>
+
+          <div class="about-features-list">
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i> Konsultasi Warna Personal
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i> Bebas Bau Menyengat
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i> Ruangan VIP Bersih Ber-AC
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i> Perawatan Khusus Rambut Sensitif
+            </div>
+          </div>
+
+          <a href="#booking" class="btn btn-gold">
+            <i class="fa-solid fa-calendar-check"></i> Reservasi Kunjungan Anda
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive WhatsApp Booking Engine -->
+  <section id="booking" class="booking-section">
+    <div class="container">
+      <div class="booking-wrapper">
+        <!-- Sidebar Info -->
+        <div class="booking-sidebar">
+          <div>
+            <span class="section-tag" style="color:var(--gold-light);">Online Reservation</span>
+            <h3>Reservasi Mudah &amp; Cepat</h3>
+            <p>Pilih layanan favorit Anda, tentukan jadwal kunjungan, dan sistem pintar kami akan langsung menyiapkan format pesan WhatsApp resmi ke nomor salon.</p>
+
+            <div class="booking-steps-list">
+              <div class="booking-step">
+                <div class="step-number">1</div>
+                <div class="step-info">
+                  <h5>Isi Data &amp; Layanan</h5>
+                  <p>Tentukan model perawatan yang Anda inginkan.</p>
+                </div>
+              </div>
+              <div class="booking-step">
+                <div class="step-number">2</div>
+                <div class="step-info">
+                  <h5>Pilih Jadwal &amp; Jam</h5>
+                  <p>Sesuaikan waktu luang terbaik untuk Anda.</p>
+                </div>
+              </div>
+              <div class="booking-step">
+                <div class="step-number">3</div>
+                <div class="step-info">
+                  <h5>Konfirmasi Otomatis</h5>
+                  <p>Admin salon akan segera mengonfirmasi slot Anda.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-direct-wa">
+            <strong><i class="fa-brands fa-whatsapp"></i> Butuh Konsultasi Langsung?</strong>
+            <span>Admin salon kami siap membantu konsultasi model rambut &amp; reservasi via WhatsApp: <strong>0813 1680 1311</strong></span>
+          </div>
+        </div>
+
+        <!-- Booking Form Container -->
+        <div class="booking-form-container">
+          <form id="whatsappBookingForm">
+            <div class="form-grid">
+              <!-- Name -->
+              <div class="form-group">
+                <label for="bookName">Nama Lengkap Anda *</label>
+                <input type="text" id="bookName" class="form-input" placeholder="Contoh: Amanda Clarissa" required>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="bookPhone">Nomor WhatsApp Aktif</label>
+                <input type="tel" id="bookPhone" class="form-input" placeholder="08xxxxxxxxxx">
+              </div>
+
+              <!-- Service (Full Width for long service names) -->
+              <div class="form-group full-width">
+                <label for="bookService">Pilihan Layanan / Treatment *</label>
+                <select id="bookService" class="form-select" required>
+<option value="" disabled selected>-- Pilih Jenis Layanan / Treatment --</option>
+  <optgroup label="=== HAIR CUT SERVICES ===">
+    <option value="Children's Bangs Trim">Children's Bangs Trim</option>
+    <option value="Curtain Bangs Cut">Curtain Bangs Cut</option>
+    <option value="Kids Hair Cut">Kids Hair Cut</option>
+    <option value="Women's Hair Cut">Women's Hair Cut</option>
+    <option value="Hair Trimming">Hair Trimming</option>
+    <option value="Layered Cut (Butterfly / Long Layer / Wolf / French / Hush Cut, etc)">Layered Cut (Butterfly / Long Layer / Wolf / French / Hush Cut, etc)</option>
+    <option value="Hair Wash">Hair Wash</option>
+    <option value="Blow In / Catok In Short">Blow In / Catok In Short</option>
+    <option value="Blow In / Catok In Long">Blow In / Catok In Long</option>
+    <option value="Curly Styling">Curly Styling</option>
+    <option value="Wave Curly Styling">Wave Curly Styling</option>
+    <option value="Full Hair Makeover (Complete Style Change)">Full Hair Makeover (Complete Style Change)</option>
+    <option value="Wash + Styling (Optimal Result)">Wash + Styling (Optimal Result)</option>
+  </optgroup>
+  <optgroup label="=== HAIR TREATMENT ===">
+    <option value="Creambath Tradisional (Lidah Buaya, Alpukat, Ginseng)">Creambath Tradisional (Lidah Buaya, Alpukat, Ginseng)</option>
+    <option value="Creambath Milk">Creambath Milk</option>
+    <option value="Creambath Makarizo (Coklat, Strawberry, Vanila, Mint)">Creambath Makarizo (Coklat, Strawberry, Vanila, Mint)</option>
+    <option value="Nourishing Creambath Keratin">Nourishing Creambath Keratin</option>
+    <option value="Hair Spa Keratin">Hair Spa Keratin</option>
+    <option value="Hair Spa L'Oreal">Hair Spa L'Oreal</option>
+    <option value="Relaxing Hair Spa">Relaxing Hair Spa</option>
+    <option value="Hair Mask Keratin">Hair Mask Keratin</option>
+    <option value="Nourishing Hair Mask">Nourishing Hair Mask</option>
+    <option value="Repair & Damage Control Mask">Repair & Damage Control Mask</option>
+    <option value="Extra Charge (Rambut Tebal / Extra Long)">Extra Charge (Rambut Tebal / Extra Long)</option>
+  </optgroup>
+  <optgroup label="=== HAIR COLORING ===">
+    <option value="Toning">Toning</option>
+    <option value="Peek a Boo / Hidden Color">Peek a Boo / Hidden Color</option>
+    <option value="Bleaching">Bleaching</option>
+    <option value="Highlight">Highlight</option>
+    <option value="Balayage">Balayage</option>
+    <option value="Basic Color">Basic Color</option>
+    <option value="Full Head Fashion Color">Full Head Fashion Color</option>
+    <option value="Extra Olaplex Protection">Extra Olaplex Protection</option>
+    <option value="Extra Smartplex Protection">Extra Smartplex Protection</option>
+  </optgroup>
+  <optgroup label="=== HAIR KERATIN ===">
+    <option value="Keratin Filler">Keratin Filler</option>
+    <option value="Hair Keratin Treatment">Hair Keratin Treatment</option>
+  </optgroup>
+  <optgroup label="=== HAIR STRAIGHTENING ===">
+    <option value="Signature Silk Straight">Signature Silk Straight</option>
+    <option value="Collagen Smoothing Treatment">Collagen Smoothing Treatment</option>
+    <option value="Advanced Keratin Smoothing">Advanced Keratin Smoothing</option>
+    <option value="Keratin Blow Perm (Korean Wave)">Keratin Blow Perm (Korean Wave)</option>
+  </optgroup>
+  <optgroup label="=== WAVE PERMANENT ===">
+    <option value="Down Perm">Down Perm</option>
+    <option value="Traditional Permanent">Traditional Permanent</option>
+    <option value="Blow Perm">Blow Perm</option>
+    <option value="Extra Tebal Charge">Extra Tebal Charge</option>
+  </optgroup>
+  <optgroup label="=== EYEBROW ===">
+    <option value="Brow Shaping">Brow Shaping</option>
+    <option value="Henna Brow">Henna Brow</option>
+  </optgroup>
+  <optgroup label="=== HAIR EXTENSION ===">
+    <option value="Hair Extension Perhelai">Hair Extension Perhelai</option>
+    <option value="Pemasangan Ring">Pemasangan Ring</option>
+    <option value="Pemasangan Ring Kepang">Pemasangan Ring Kepang</option>
+    <option value="Pemasangan Kepang">Pemasangan Kepang</option>
+    <option value="Remove Service Hair Extension">Remove Service Hair Extension</option>
+  </optgroup>
+  <optgroup label="=== NAIL SERVICES ===">
+    <option value="Express Manicure">Express Manicure</option>
+    <option value="Manicure">Manicure</option>
+    <option value="Spa Manicure (Scrub & Spa Salt)">Spa Manicure (Scrub & Spa Salt)</option>
+    <option value="Pedicure">Pedicure</option>
+    <option value="Spa Pedicure (Scrub & Spa Salt)">Spa Pedicure (Scrub & Spa Salt)</option>
+    <option value="Manicure & Pedicure Package">Manicure & Pedicure Package</option>
+    <option value="Gel Polish (Hands)">Gel Polish (Hands)</option>
+    <option value="Gel Polish (Feet)">Gel Polish (Feet)</option>
+    <option value="Gel Polish Removal">Gel Polish Removal</option>
+    <option value="Nail Tip Extension">Nail Tip Extension</option>
+    <option value="Acrylic Full Set">Acrylic Full Set</option>
+    <option value="Nail Art">Nail Art</option>
+  </optgroup>
+  <optgroup label="=== FACIAL TREATMENT ===">
+    <option value="Brightening Facial Treatment">Brightening Facial Treatment</option>
+    <option value="Anti-Aging Facial Therapy (Biakos Professional)">Anti-Aging Facial Therapy (Biakos Professional)</option>
+    <option value="Vitamin C Brightening Mask (Additional)">Vitamin C Brightening Mask (Additional)</option>
+    <option value="Anti Aging Mask (Additional)">Anti Aging Mask (Additional)</option>
+    <option value="Hydrating Eye Mask (Additional)">Hydrating Eye Mask (Additional)</option>
+  </optgroup>
+  <optgroup label="=== FACE SPA TREATMENT ===">
+    <option value="Therapy Mata">Therapy Mata</option>
+    <option value="Totok Wajah">Totok Wajah</option>
+    <option value="Totok Wajah Relaksasi">Totok Wajah Relaksasi</option>
+  </optgroup>
+  <optgroup label="=== BODY SPA TREATMENT ===">
+    <option value="Ratus (Herbal Steam)">Ratus (Herbal Steam)</option>
+    <option value="Back Massage">Back Massage</option>
+    <option value="Body Steam">Body Steam</option>
+    <option value="Scraping Therapy (Kerik)">Scraping Therapy (Kerik)</option>
+    <option value="Foot Spa">Foot Spa</option>
+    <option value="Foot Spa Complete">Foot Spa Complete</option>
+    <option value="Pijat Refleksi">Pijat Refleksi</option>
+    <option value="Pijat Refleksi Full Body">Pijat Refleksi Full Body</option>
+    <option value="Body Scrub">Body Scrub</option>
+    <option value="Body Mask">Body Mask</option>
+    <option value="Lulur">Lulur</option>
+    <option value="Body Massage">Body Massage</option>
+    <option value="Lulur + Body Massage">Lulur + Body Massage</option>
+    <option value="Body Bleaching Treatment">Body Bleaching Treatment</option>
+  </optgroup>
+  <optgroup label="=== EYELASH ===">
+    <option value="Eyelash Extension">Eyelash Extension</option>
+  </optgroup>
+  <optgroup label="=== MAKEUP ===">
+    <option value="Make Up">Make Up</option>
+    <option value="Hair Do">Hair Do</option>
+    <option value="Hair Styling">Hair Styling</option>
+  </optgroup>
+                </select>
+              </div>
+
+              <!-- Date -->
+              <div class="form-group">
+                <label for="bookDate">Rencana Tanggal Kunjungan *</label>
+                <input type="date" id="bookDate" class="form-input" required>
+              </div>
+
+              <!-- Manual Time Input -->
+              <div class="form-group">
+                <label for="bookTime">Estimasi Jam Kedatangan (Manual) *</label>
+                <input type="text" id="bookTime" class="form-input" placeholder="Contoh: 14.30 atau Jam 3 Sore" required>
+              </div>
+
+              <!-- Notes -->
+              <div class="form-group full-width">
+                <label for="bookNotes">Catatan Tambahan (Kondisi Rambut / Request Khusus)</label>
+                <textarea id="bookNotes" class="form-textarea" placeholder="Contoh: Rambut pernah di-smoothing 6 bulan lalu, ingin potong layer sebahu..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-gold booking-submit-btn">
+              <i class="fa-brands fa-whatsapp"></i> Kirim Permintaan Reservasi ke WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Client Reviews -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Ulasan Klien</span>
+        <h2 class="section-title">Kepuasan &amp; Cerita Pelanggan Setia</h2>
+        <p class="section-subtitle">Lebih dari ribuan transformasi telah dipercayakan kepada kami. Inilah pengalaman berkesan mereka di Aeryn Salon.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Hasil Ash Blonde Balayage-nya beneran di luar ekspektasi! Halus banget gradasinya, rambut sama sekali nggak kering atau rapuh karena produk bleaching-nya premium. Tempatnya bersih dan pelayanannya sangat ramah."
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">CL</div>
+            <div class="reviewer-details">
+              <h5>Clarissa Lavinia</h5>
+              <span>Klien Balayage Regular</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Keratin treatment di Aeryn Salon penyelamat rambut rusakku! Rambut yang tadinya megar dan kusam sekarang jatuh rapi dan berkilau alami. Nggak perlu catok lama lagi tiap pagi. Recomended banget!"
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">NP</div>
+            <div class="reviewer-details">
+              <h5>Nadia Pramesti</h5>
+              <span>Klien Keratin Restoration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Stylist-nya detail banget dengerin request bentuk muka dan gaya hidup kita sebelum gunting rambut. Hasil potongannya tahan lama dan gampang di-styling sendiri di rumah. Suasana salonnya juga berkelas."
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">VM</div>
+            <div class="reviewer-details">
+              <h5>Valerie Michelle</h5>
+              <span>Klien Precision Haircut</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location, Hours & Amenities -->
+  <section id="location" class="location-section">
+    <div class="container">
+      <div class="location-grid">
+        <!-- Info Card -->
+        <div class="location-card">
+          <span class="section-tag">Studio &amp; Fasilitas</span>
+          <h3>Kunjungi Studio Aeryn Salon</h3>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="info-text">
+              <h5>Alamat Studio Salon</h5>
+              <p>Jalan Limo Raya No.39 (Depan SPBU VIVO), Depok</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="info-text">
+              <h5>Jam Operasional</h5>
+              <p><strong style="color:var(--gold-dark);">OPEN EVERYDAY</strong><br>09.00 AM – 19.00 PM WIB (Buka Setiap Hari)</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="info-text">
+              <h5>Hotline &amp; Konsultasi</h5>
+              <p>WhatsApp: +62 813-1680-1311<br>Instagram: <a href="https://instagram.com/aerynsalon" target="_blank" style="color:var(--gold-dark); text-decoration:underline;">@aerynsalon</a><br>Email: aerynsalon@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Amenities Strip -->
+          <div class="amenities-strip">
+            <div class="amenity-box">
+              <i class="fa-solid fa-snowflake"></i>
+              Ruang AC Nyaman
+            </div>
+            <div class="amenity-box">
+              <i class="fa-solid fa-wifi"></i>
+              Free High WiFi
+            </div>
+            <div class="amenity-box">
+              <i class="fa-solid fa-square-parking"></i>
+              Area Parkir Aman
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="map-wrapper">
+          <iframe 
+            src="https://maps.google.com/maps?q=-6.3671201,106.7749544(AERYN+SALON)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokasi AERYN SALON - Jl. Limo Raya No.39, Limo, Kec. Limo, Kota Depok, Jawa Barat 16515">
+          </iframe>
+          <div class="map-overlay-card">
+            <a href="https://www.google.com/maps/dir//AERYN+SALON,+Jl.+Limo+Raya+No.39,+Limo,+Kec.+Limo,+Kota+Depok,+Jawa+Barat+16515/@-6.3671201,106.7749544,17z/" target="_blank" class="btn btn-gold btn-sm">
+              <i class="fa-solid fa-diamond-turn-right"></i> Buka Rute di Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Luxury Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <h2>AERYN SALON</h2>
+          <span class="gold">Haute Coiffure &amp; Beauty Lounge</span>
+          <p>Destinasi perawatan rambut dan kecantikan butik premium yang memprioritaskan kesehatan rambut, keanggunan, dan kenyamanan eksklusif setiap klien.</p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com/aerynsalon" target="_blank" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank" class="social-icon-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/6281316801311" target="_blank" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.google.com/maps/dir//AERYN+SALON,+Jl.+Limo+Raya+No.39,+Limo,+Kec.+Limo,+Kota+Depok,+Jawa+Barat+16515/@-6.3671201,106.7749544,17z/" target="_blank" class="social-icon-btn" aria-label="Lokasi Google Maps"><i class="fa-solid fa-map-pin"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h5>Navigasi</h5>
+          <ul class="footer-links-list">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#pillars">Keunggulan Salon</a></li>
+            <li><a href="#services">Menu Layanan &amp; Treatment</a></li>
+            <li><a href="#lookbook">Koleksi Lookbook</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#location">Lokasi &amp; Jam Buka</a></li>
+          </ul>
+        </div>
+
+        <!-- Signature Treatments -->
+        <div class="footer-col">
+          <h5>Signature Care</h5>
+          <ul class="footer-links-list">
+            <li><a href="#services">Ash Blonde Balayage</a></li>
+            <li><a href="#services">Caramel Blonde Color</a></li>
+            <li><a href="#services">Hair Keratin Restoration</a></li>
+            <li><a href="#services">Precision Haircut</a></li>
+            <li><a href="#services">Spa Scalp &amp; Mask</a></li>
+            <li><a href="#services">Glamour Nail Art</a></li>
+          </ul>
+        </div>
+
+        <!-- Operational & Contact -->
+        <div class="footer-col">
+          <h5>Kontak &amp; Reservasi</h5>
+          <ul class="footer-links-list">
+            <li style="color:#C4BEB4;"><i class="fa-solid fa-phone" style="color:var(--gold-primary); margin-right:8px;"></i> +62 813-1680-1311</li>
+            <li style="color:#C4BEB4;"><i class="fa-solid fa-envelope" style="color:var(--gold-primary); margin-right:8px;"></i> aerynsalon@gmail.com</li>
+            <li style="color:#C4BEB4;"><i class="fa-brands fa-instagram" style="color:var(--gold-primary); margin-right:8px;"></i> @aerynsalon</li>
+            <li style="color:#C4BEB4;"><i class="fa-solid fa-clock" style="color:var(--gold-primary); margin-right:8px;"></i> OPEN EVERYDAY: 09.00 – 19.00 WIB</li>
+            <li style="color:#C4BEB4; font-size:0.85rem; margin-top:4px;"><i class="fa-solid fa-location-dot" style="color:var(--gold-primary); margin-right:8px;"></i> Jl. Limo Raya No.39 (Depan SPBU VIVO) Depok</li>
+            <li style="margin-top: 10px;">
+              <span class="badge-gold">
+                <i class="fa-solid fa-users"></i> Pengunjung: <span id="visitorCounter">103</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>AERYN SALON</strong>. All Rights Reserved. Domain Resmi: <a href="http://aerynsalon.my.id/" style="color:var(--gold-light);">aerynsalon.my.id</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Action Button -->
+  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20konsultasi%20perawatan%20rambut%20dan%20reservasi." target="_blank" class="floating-wa-btn" aria-label="Chat WhatsApp Admin Salon">
+    <span class="wa-beacon-ring"></span>
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Interactive JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
