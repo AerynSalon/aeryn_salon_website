@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AERYN SALON - Luxury Beauty, Hair Styling & Color Lounge</title>
+  <meta name="description" content="Aeryn Salon & Beauty Lounge - Destinasi perawatan rambut dan kecantikan eksklusif di Limo Depok. Signature Balayage, Keratin Treatment, Hair Coloring, Nail Art & Spa.">
+  <meta name="keywords" content="Aeryn Salon, salon depok, balayage depok, keratin treatment, hair coloring, potong rambut modern, salon kecantikan limo depok, aerynsalon.my.id">
+  <meta name="theme-color" content="#0F0A16">
+
+  <!-- OpenGraph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aerynsalon.my.id/">
+  <meta property="og:title" content="AERYN SALON - Luxury Beauty & Hair Lounge">
+  <meta property="og:description" content="Where Artistry Meets Healthy Hair. Rasakan pengalaman perawatan rambut dan kecantikan kelas atas bersama master stylist profesional.">
+  <meta property="og:image" content="images/Ashblonde%20bayalage.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/Haircolor_icon.jpg">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Luxury Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Aeryn Salon",
+    "image": "https://aerynsalon.my.id/images/Ashblonde%20bayalage.jpg",
+    "url": "https://aerynsalon.my.id",
+    "telephone": "+6281316801311",
+    "email": "aerynsalon@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Limo Raya No.39 (Depan SPBU VIVO)",
+      "addressLocality": "Limo, Kota Depok",
+      "addressRegion": "Jawa Barat",
+      "postalCode": "16515",
+      "addressCountry": "ID"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -6.3671201,
+      "longitude": 106.7749544
+    },
+    "hasMap": "https://www.google.com/maps/dir//AERYN+SALON,+Jl.+Limo+Raya+No.39,+Limo,+Kec.+Limo,+Kota+Depok,+Jawa+Barat+16515/@-6.3671201,106.7749544,17z/",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container">
+      <div class="announcement-info">
+        <span class="announcement-item">
+          <span class="pulse-dot"></span> <strong>Jam Buka:</strong> SETIAP HARI, 09.00 – 19.00 WIB
+        </span>
+        <span class="announcement-item hidden-mobile">
+          <i class="fa-solid fa-sparkles"></i> Konsultasi Warna &amp; Model Rambut bersama Master Stylist
+        </span>
+      </div>
+      <div class="announcement-info">
+        <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20konsultasi%20perawatan%20rambut." target="_blank" class="announcement-item highlight-link">
+          <i class="fa-brands fa-whatsapp"></i> Hotline &amp; Konsultasi: 0813 1680 1311
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Luxury Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo">
+        <span class="brand-title">AERYN SALON</span>
+        <span class="brand-subtitle">Beauty &amp; Hair Lounge</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav">
+        <a href="#home" class="active">Beranda</a>
+        <a href="#hair-finder">Solusi Rambut</a>
+        <a href="#services">Menu Layanan</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#reviews">Testimoni</a>
+        <a href="#location">Lokasi</a>
+      </nav>
+
+      <!-- Header CTA Buttons -->
+      <div class="header-cta-group">
+        <a href="#booking" class="btn btn-gold btn-sm">
+          <i class="fa-solid fa-calendar-check"></i> Reservasi Jadwal
+        </a>
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div id="drawerOverlay" class="drawer-overlay"></div>
+  <aside id="mobileDrawer" class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <div class="brand-logo">
+          <span class="brand-title" style="color:#FFF;">AERYN SALON</span>
+          <span class="brand-subtitle">Beauty &amp; Hair Lounge</span>
+        </div>
+        <button id="drawerClose" class="drawer-close" aria-label="Tutup Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="drawer-links">
+        <a href="#home"><i class="fa-solid fa-house"></i> Beranda</a>
+        <a href="#hair-finder"><i class="fa-solid fa-wand-magic-sparkles"></i> Solusi Kebutuhan Rambut</a>
+        <a href="#services"><i class="fa-solid fa-list-check"></i> Menu &amp; Katalog Perawatan</a>
+        <a href="#lookbook"><i class="fa-solid fa-images"></i> Lookbook Galeri</a>
+        <a href="#about"><i class="fa-solid fa-circle-info"></i> Tentang Kami &amp; Fasilitas</a>
+        <a href="#reviews"><i class="fa-solid fa-star"></i> Testimoni Klien</a>
+        <a href="#location"><i class="fa-solid fa-location-dot"></i> Lokasi &amp; Jam Buka</a>
+      </nav>
+    </div>
+
+    <div>
+      <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20tanya%20konsultasi%20layanan." target="_blank" class="btn btn-gold" style="width:100%; margin-bottom: 12px;">
+        <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp Admin
+      </a>
+      <p style="font-size:0.75rem; color:#888; text-align:center;">Official Site: aerynsalon.my.id</p>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-media-bg">
+      <video class="hero-video" autoplay muted loop playsinline poster="images/Caramel%20Blonde%20full%20color.jpg">
+        <source src="images/caramel_blonde_running_text.mp4" type="video/mp4">
+        <img src="images/Caramel%20Blonde%20full%20color.jpg" alt="Aeryn Salon Signature Hair Styling" class="hero-img">
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-crown"></i> Official Salon &amp; Hair Care — Limo, Depok
+        </div>
+        <h1 class="hero-title">
+          Where Artistry Meets <span class="gold-gradient-text gold">Healthy Hair</span>
+        </h1>
+        <p class="hero-desc">
+          Wujudkan kilau rambut impian dan penampilan memukau bersama master stylist profesional. Dapatkan sapuan Balayage berdimensi halus, Keratin pemulihan rambut rusak, serta perawatan kecantikan butik dengan kenyamanan berkelas.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#booking" class="btn btn-gold">
+            <i class="fa-solid fa-calendar-plus"></i> Reservasi Jadwal Kunjungan
+          </a>
+          <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20konsultasi%20model%20rambut%20dan%20tanya%20harga." target="_blank" class="btn btn-outline-white">
+            <i class="fa-brands fa-whatsapp"></i> Konsultasi via WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-stats-strip">
+          <div class="hero-stat-item">
+            <h3>10+ Thn</h3>
+            <p>Pengalaman Senior Stylist</p>
+          </div>
+          <div class="hero-stat-item">
+            <h3>5.000+</h3>
+            <p>Transformasi Sukses</p>
+          </div>
+          <div class="hero-stat-item">
+            <h3>100%</h3>
+            <p>Formula Internasional Aman</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Hair Problem Finder (Quick Selector) -->
+  <section id="hair-finder" class="finder-section">
+    <div class="container">
+      <div class="finder-box">
+        <div class="finder-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Solusi Cepat</span>
+          <h2 class="finder-title">Apa Kebutuhan Rambut &amp; Perawatan Anda Hari Ini?</h2>
+          <p class="finder-subtitle">Klik salah satu pilihan di bawah untuk langsung menemukan perawatan yang paling cocok untuk Anda:</p>
+        </div>
+
+        <div class="finder-grid">
+          <div class="finder-card" data-target-tab="haircut">
+            <div class="finder-icon"><i class="fa-solid fa-scissors"></i></div>
+            <h4>Ingin Model Potongan Baru</h4>
+            <p>Butterfly cut, wolf cut, poni curtain bangs, atau potong rapi bervolume.</p>
+            <span class="finder-action">Lihat Pilihan Haircut <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+          <div class="finder-card" data-target-tab="coloring">
+            <div class="finder-icon"><i class="fa-solid fa-palette"></i></div>
+            <h4>Mau Balayage / Ganti Warna</h4>
+            <p>Ash blonde, brown dimensional, milk tea, atau warna tren tanpa garis patah.</p>
+            <span class="finder-action">Lihat Pilihan Warna <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+          <div class="finder-card" data-target-tab="treatment">
+            <div class="finder-icon"><i class="fa-solid fa-shield-heart"></i></div>
+            <h4>Rambut Rusak, Kering &amp; Megar</h4>
+            <p>Keratin restoration deep repair, collagen smoothing, atau creambath relaksasi.</p>
+            <span class="finder-action">Lihat Solusi Keratin <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+          <div class="finder-card" data-target-tab="spa">
+            <div class="finder-icon"><i class="fa-solid fa-spa"></i></div>
+            <h4>Me-Time Kuku, Wajah &amp; Spa</h4>
+            <p>Manicure gel polish, nail art mewah, totok wajah glowing, dan lulur spa tubuh.</p>
+            <span class="finder-action">Lihat Pilihan Spa <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars Section (Why Choose Aeryn Salon) -->
+  <section id="pillars" class="pillars-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Keunggulan Eksklusif</span>
+        <h2 class="section-title">Dedikasi Kualitas &amp; Kenyamanan Terbaik</h2>
+        <p class="section-subtitle">Setiap helai rambut Anda berharga. Kami mengombinasikan keahlian seni tata rambut dengan formula ramah serat rambut untuk hasil yang lembut, sehat, dan memesona.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <i class="fa-solid fa-scissors"></i>
+          </div>
+          <h4>Master Stylists &amp; Colorists</h4>
+          <p>Dikerjakan langsung oleh profesional berpengalaman dengan teknik modern: Balayage, Airtouch, French Layer, dan Korean Perm.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <i class="fa-solid fa-bottle-droplet"></i>
+          </div>
+          <h4>Formula Premium &amp; Olaplex Care</h4>
+          <p>Menggunakan produk berkualitas tinggi yang melindungi ikatan rambut, mengunci kelembutan alami, dan bebas bau menyengat.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <i class="fa-solid fa-couch"></i>
+          </div>
+          <h4>Lounge Nyaman &amp; Higienis</h4>
+          <p>Suasana salon elegan ber-AC sejuk, kursi reclining ergonomis, alat tersanitasi higienis, serta musik ambient menenangkan.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <h4>Personalized Consultation</h4>
+          <p>Konsultasi personal mendalam mengenai bentuk wajah, undertone kulit, riwayat kimia rambut, dan estimasi biaya sebelum mulai.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Treatment Menu -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Pilihan Terfavorit</span>
+        <h2 class="section-title">Signature Services Showcase</h2>
+        <p class="section-subtitle">Inspirasi perawatan rambut dan kecantikan unggulan yang paling disukai klien Aeryn Salon. Konsultasikan foto referensi Anda bersama stylist kami.</p>
+      </div>
+
+      <!-- Service Filter Tabs -->
+      <div class="service-tabs">
+        <button class="tab-btn active" data-filter="all">Semua Signature</button>
+        <button class="tab-btn" data-filter="coloring">Hair Coloring &amp; Balayage</button>
+        <button class="tab-btn" data-filter="treatment">Keratin &amp; Smoothing</button>
+        <button class="tab-btn" data-filter="haircut">Haircut &amp; Styling</button>
+        <button class="tab-btn" data-filter="nail">Nail &amp; Makeup</button>
+      </div>
+
+      <!-- Service Cards Grid -->
+      <div class="services-grid">
+
+        <!-- Card 1 -->
+        <div class="service-card" data-category="coloring">
+          <div class="service-img-wrapper">
+            <img src="images/Caramel%20Blonde%20full%20color.jpg" alt="Caramel Blonde Full Color" loading="lazy">
+            <span class="service-tag-badge">Best Seller</span>
+          </div>
+          <div class="service-content">
+            <h4>Caramel Blonde Full Color</h4>
+            <p class="service-desc">Warna pirang karamel hangat berkilau yang memberikan efek wajah lebih cerah dan glowing alami.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-clock"></i> Estimasi ~2,5 Jam</span>
+              <span class="service-highlight-tag"><i class="fa-solid fa-comment-dots"></i> Tanya Estimasi via WA</span>
+            </div>
+            <div class="card-action-row">
+              <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20tertarik%20dengan%20Caramel%20Blonde%20Full%20Color.%20Boleh%20tanya%20estimasi%20biayanya?" target="_blank" class="btn btn-outline-gold btn-sm" title="Konsultasi via WA">
+                <i class="fa-brands fa-whatsapp"></i> Tanya WA
+              </a>
+              <a href="#booking" class="btn btn-gold btn-sm quick-book-btn" data-category="Coloring" data-service="Caramel Blonde Full Color">
+                <i class="fa-solid fa-calendar-plus"></i> Pilih Layanan
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card" data-category="coloring">
+          <div class="service-img-wrapper">
+            <img src="images/Ashblonde%20bayalage.jpg" alt="Ash Blonde Balayage Signature" loading="lazy">
+            <span class="service-tag-badge">Signature Look</span>
+          </div>
+          <div class="service-content">
+            <h4>Ash Blonde Balayage</h4>
+            <p class="service-desc">Gradasi warna abu-abu pirang dingin yang seamless, berdimensi mewah, dan tetap rapi saat rambut bertambah panjang.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-clock"></i> Estimasi ~3,5 Jam</span>
+              <span class="service-highlight-tag"><i class="fa-solid fa-shield-halved"></i> Free Toning Protection</span>
+            </div>
+            <div class="card-action-row">
+              <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20konsultasi%20Ash%20Blonde%20Balayage.%20Boleh%20tanya%20estimasi%20biayanya?" target="_blank" class="btn btn-outline-gold btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> Tanya WA
+              </a>
+              <a href="#booking" class="btn btn-gold btn-sm quick-book-btn" data-category="Coloring" data-service="Ash Blonde Balayage">
+                <i class="fa-solid fa-calendar-plus"></i> Pilih Layanan
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card" data-category="coloring">
+          <div class="service-img-wrapper">
+            <img src="images/Ashbrown%20highlight%20balayage.jpg" alt="Ash Brown Highlight Balayage" loading="lazy">
+            <span class="service-tag-badge">Most Elegant</span>
+          </div>
+          <div class="service-content">
+            <h4>Ash Brown Highlight Balayage</h4>
+            <p class="service-desc">Paduan cokelat dingin dengan highlight halus, menciptakan ilusi rambut lebih tebal bervolume dan sangat anggun.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-clock"></i> Estimasi ~3 Jam</span>
+              <span class="service-highlight-tag"><i class="fa-solid fa-comment-dots"></i> Tanya Estimasi via WA</span>
+            </div>
+            <div class="card-action-row">
+              <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20tanya%20Ash%20Brown%20Highlight%20Balayage." target="_blank" class="btn btn-outline-gold btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> Tanya WA
+              </a>
+              <a href="#booking" class="btn btn-gold btn-sm quick-book-btn" data-category="Coloring" data-service="Ash Brown Highlight Balayage">
+                <i class="fa-solid fa-calendar-plus"></i> Pilih Layanan
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card" data-category="treatment">
+          <div class="service-img-wrapper">
+            <img src="images/Hair%20keratin.jpg" alt="Hair Keratin & Smoothing Restoration" loading="lazy">
+            <span class="service-tag-badge">Intense Repair</span>
+          </div>
+          <div class="service-content">
+            <h4>Hair Keratin Restoration</h4>
+            <p class="service-desc">Terapi deep-repair keratin mengembalikan elastisitas rambut kering atau megar agar lurus alami, lembut, dan berkilau sutra.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-clock"></i> Estimasi ~2 Jam</span>
+              <span class="service-highlight-tag"><i class="fa-solid fa-sparkles"></i> Lurus Lembut Berbulan-bulan</span>
+            </div>
+            <div class="card-action-row">
+              <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20konsultasi%20Hair%20Keratin%20Restoration." target="_blank" class="btn btn-outline-gold btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> Tanya WA
+              </a>
+              <a href="#booking" class="btn btn-gold btn-sm quick-book-btn" data-category="Treatment" data-service="Hair Keratin Treatment">
+                <i class="fa-solid fa-calendar-plus"></i> Pilih Layanan
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card" data-category="coloring">
+          <div class="service-img-wrapper">
+            <img src="images/Milk%20tea%20ashblonde.jpg" alt="Milk Tea Ash Blonde" loading="lazy">
+            <span class="service-tag-badge">Korean Trend</span>
+          </div>
+          <div class="service-content">
+            <h4>Milk Tea Ash Blonde</h4>
+            <p class="service-desc">Warna teh susu creamy berpadu nuansa ashy lembut. Sangat populer ala selebriti Korea untuk tampilan chic dan kekinian.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-clock"></i> Estimasi ~3 Jam</span>
+              <span class="service-highlight-tag"><i class="fa-solid fa-comment-dots"></i> Tanya Estimasi via WA</span>
+            </div>
+            <div class="card-action-row">
+              <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20tertarik%20Milk%20Tea%20Ash%20Blonde." target="_blank" class="btn btn-outline-gold btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> Tanya WA
+              </a>
+              <a href="#booking" class="btn btn-gold btn-sm quick-book-btn" data-category="Coloring" data-service="Full Head Fashion Color">
+                <i class="fa-solid fa-calendar-plus"></i> Pilih Layanan
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card" data-category="coloring">
+          <div class="service-img-wrapper">
+            <img src="images/ash%20blue%20hair%20color.jpg" alt="Ash Blue Creative Color" loading="lazy">
+            <span class="service-tag-badge">Haute Couture</span>
+          </div>
+          <div class="service-content">
+            <h4>Ash Blue Metallic Shades</h4>
+            <p class="service-desc">Eksplorasi warna biru keabuan metalik yang berani, berkelas, dan memikat perhatian di setiap pencahayaan.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-clock"></i> Estimasi ~3,5 Jam</span>
+              <span class="service-highlight-tag"><i class="fa-solid fa-shield-halved"></i> Formula Bond Protector</span>
+            </div>
+            <div class="card-action-row">
+              <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20tanya%20Ash%20Blue%20Metallic." target="_blank" class="btn btn-outline-gold btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> Tanya WA
+              </a>
+              <a href="#booking" class="btn btn-gold btn-sm quick-book-btn" data-category="Coloring" data-service="Full Head Fashion Color">
+                <i class="fa-solid fa-calendar-plus"></i> Pilih Layanan
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="service-card" data-category="haircut">
+          <div class="service-img-wrapper">
+            <img src="images/haircut_icon.jpg" alt="Precision Haircut & Styling" loading="lazy">
+            <span class="service-tag-badge">Essential Care</span>
+          </div>
+          <div class="service-content">
+            <h4>Women's Signature Haircut</h4>
+            <p class="service-desc">Potongan presisi sesuai struktur wajah dan tekstur rambut, sudah termasuk keramas relaksasi, pijat leher, dan professional blow styling.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-clock"></i> Estimasi ~45 Menit</span>
+              <span class="service-highlight-tag"><i class="fa-solid fa-sparkles"></i> Wash &amp; Styling Included</span>
+            </div>
+            <div class="card-action-row">
+              <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20tanya%20jadwal%20potong%20rambut." target="_blank" class="btn btn-outline-gold btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> Tanya WA
+              </a>
+              <a href="#booking" class="btn btn-gold btn-sm quick-book-btn" data-category="Haircut" data-service="Women's Hair Cut">
+                <i class="fa-solid fa-calendar-plus"></i> Pilih Layanan
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="service-card" data-category="treatment">
+          <div class="service-img-wrapper">
+            <img src="images/perawatan_rambut_icon.jpg" alt="Spa Scalp & Hair Treatment" loading="lazy">
+            <span class="service-tag-badge">Relaxation</span>
+          </div>
+          <div class="service-content">
+            <h4>Spa Scalp &amp; Deep Hair Mask</h4>
+            <p class="service-desc">Terapi kesegaran kulit kepala dari minyak berlebih dan ketombe, dipadukan pijat relaksasi leher dan masker nutrisi helai rambut.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-clock"></i> Estimasi ~60 Menit</span>
+              <span class="service-highlight-tag"><i class="fa-solid fa-spa"></i> Pijat Relaksasi Leher</span>
+            </div>
+            <div class="card-action-row">
+              <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20tanya%20Hair%20Spa%20dan%20Creambath." target="_blank" class="btn btn-outline-gold btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> Tanya WA
+              </a>
+              <a href="#booking" class="btn btn-gold btn-sm quick-book-btn" data-category="Treatment" data-service="Hair Spa L'Oreal">
+                <i class="fa-solid fa-calendar-plus"></i> Pilih Layanan
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="service-card" data-category="nail">
+          <div class="service-img-wrapper">
+            <img src="images/manicure_icon.jpg" alt="Manicure & Nail Art" loading="lazy">
+            <span class="service-tag-badge">Beauty Care</span>
+          </div>
+          <div class="service-content">
+            <h4>Glamour Manicure &amp; Nail Art</h4>
+            <p class="service-desc">Pembersihan kutikula profesional, pembentukan kuku, gel polish tahan lama, dan kreasi nail art elegan sesuai request Anda.</p>
+            <div class="service-meta">
+              <span class="service-highlight-tag"><i class="fa-solid fa-clock"></i> Estimasi ~60 Menit</span>
+              <span class="service-highlight-tag"><i class="fa-solid fa-hand-sparkles"></i> Gel Polish Tahan Lama</span>
+            </div>
+            <div class="card-action-row">
+              <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20tanya%20layanan%20Nail%20Art." target="_blank" class="btn btn-outline-gold btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> Tanya WA
+              </a>
+              <a href="#booking" class="btn btn-gold btn-sm quick-book-btn" data-category="Spa" data-service="Nail Art">
+                <i class="fa-solid fa-calendar-plus"></i> Pilih Layanan
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- RESTRUCTURED 4 PILLARS COMPLETE TREATMENT MENU (NO DUPLICATES) -->
+      <!-- ============================================================== -->
+      <div class="treatment-catalog-wrapper" id="treatmentCatalog">
+        <div class="text-center catalog-intro">
+          <span class="section-tag"><i class="fa-solid fa-book-open"></i> Katalog Lengkap Salon</span>
+          <h3 class="section-title">Daftar Seluruh Menu Perawatan &amp; Layanan</h3>
+          <p class="section-subtitle">
+            Jelajahi seluruh layanan kami yang dikelompokkan ke dalam 4 pilar utama. Pilih layanan yang Anda inginkan untuk reservasi atau konsultasi via WhatsApp.
+          </p>
+        </div>
+
+        <!-- Quick Live Search in Catalog -->
+        <div class="catalog-search-wrap">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="catalogSearchInput" placeholder="Cari nama perawatan (contoh: creambath, balayage, potong poni, manicure, smoothing)...">
+        </div>
+
+        <!-- Catalog 4 Pillar Tabs Navigation -->
+        <div class="catalog-pill-nav">
+          <button class="catalog-tab-btn active" data-pillar="p-haircut">
+            <i class="fa-solid fa-scissors"></i> <span>1. Haircut &amp; Styling</span>
+          </button>
+          <button class="catalog-tab-btn" data-pillar="p-coloring">
+            <i class="fa-solid fa-palette"></i> <span>2. Color &amp; Balayage</span>
+          </button>
+          <button class="catalog-tab-btn" data-pillar="p-treatment">
+            <i class="fa-solid fa-shield-heart"></i> <span>3. Repair, Keratin &amp; Perm</span>
+          </button>
+          <button class="catalog-tab-btn" data-pillar="p-spa">
+            <i class="fa-solid fa-hand-sparkles"></i> <span>4. Nails, Face &amp; Spa</span>
+          </button>
+        </div>
+
+        <!-- Catalog Content Panes -->
+        <div class="catalog-panes-container">
+
+          <!-- PANE 1: HAIRCUT & STYLING -->
+          <div class="catalog-pane active" id="p-haircut">
+            <div class="pane-header-info">
+              <h4><i class="fa-solid fa-scissors"></i> Haircut &amp; Styling Services</h4>
+              <p>Potongan presisi wanita &amp; anak yang disesuaikan bentuk wajah serta penataan rambut harian/spesial.</p>
+            </div>
+            <div class="catalog-items-grid">
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Women's Signature Haircut</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~45 mnt</span>
+                </div>
+                <p>Potongan rambut wanita modern termasuk keramas relaksasi, scalp massage &amp; blow dry rapi.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20tanya%20estimasi%20Women's%20Haircut." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Haircut" data-service="Women's Hair Cut"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Layered Cut (Butterfly / Wolf / Hush / French Cut)</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~60 mnt</span>
+                </div>
+                <p>Teknik guntingan bertekstur modern khas Korea untuk volume rambut dinamis dan berdimensi.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20tanya%20model%20Layered%20Cut." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Haircut" data-service="Layered Cut (Butterfly / Long Layer / Wolf / French / Hush Cut, etc)"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Curtain Bangs Cut</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~30 mnt</span>
+                </div>
+                <p>Potongan poni tirai manis membingkai kontur wajah agar terlihat lebih tirus dan segar alami.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20potong%20Curtain%20Bangs." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Haircut" data-service="Curtain Bangs Cut"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Kids Hair Cut &amp; Children Bangs</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~30 mnt</span>
+                </div>
+                <p>Potongan rambut anak laki-laki/perempuan dengan pendekatan ramah, sabar, dan rapi.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20potong%20rambut%20anak." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Haircut" data-service="Kids Hair Cut"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Hair Trimming (Rapikan Ujung Bercabang)</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~30 mnt</span>
+                </div>
+                <p>Merapikan ujung rambut kering dan bercabang tanpa mengurangi panjang rambut secara drastis.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Hair%20Trimming." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Haircut" data-service="Hair Trimming"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Hair Wash &amp; Scalp Massage</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~30 mnt</span>
+                </div>
+                <p>Pembersihan mendalam kulit kepala disertai pijatan relaksasi untuk melancarkan peredaran darah.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Hair%20Wash." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Haircut" data-service="Hair Wash"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Blow In / Catok In (Short &amp; Long Hair)</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~45 mnt</span>
+                </div>
+                <p>Penataan blow bervolume atau catok lurus berkilau tahan lama untuk aktivitas harian.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Blow%20Catok." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Haircut" data-service="Blow In / Catok In Long"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Wave &amp; Curly Styling Glamour</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~45 mnt</span>
+                </div>
+                <p>Penataan ikal/gelombang glamour atau beachy wave lembut untuk pesta, wisuda, atau photoshoot.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Curly%20Styling." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Haircut" data-service="Wave Curly Styling"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Full Hair Makeover</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~90 mnt</span>
+                </div>
+                <p>Transformasi total potongan gaya rambut dari model awal hingga penataan akhir memukau.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Full%20Hair%20Makeover." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Haircut" data-service="Full Hair Makeover (Complete Style Change)"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PANE 2: COLOR & BALAYAGE -->
+          <div class="catalog-pane" id="p-coloring">
+            <div class="pane-header-info">
+              <h4><i class="fa-solid fa-palette"></i> Hair Color &amp; Signature Balayage</h4>
+              <p>Pewarnaan berkelas internasional dengan perlindungan batang rambut agar tetap lembut dan tidak rapuh.</p>
+            </div>
+            <div class="catalog-items-grid">
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Signature Balayage (Ash Blonde / Caramel / Brown)</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~3-4 Jam</span>
+                </div>
+                <p>Teknik sapuan gradasi kuas halus dari gelap ke terang yang seamless tanpa garis kontras.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20konsultasi%20Balayage." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Coloring" data-service="Balayage"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Basic Color &amp; Root Touch-up</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~2 Jam</span>
+                </div>
+                <p>Pewarnaan satu warna menyeluruh yang pekat atau merapikan akar rambut (tutup uban).</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20tanya%20Basic%20Color." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Coloring" data-service="Basic Color"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Multi-Dimensional Highlight</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~2,5 Jam</span>
+                </div>
+                <p>Garis dimensi warna kontras lembut yang memberi efek tekstur berkilau dan rambut tampak lebih bervolume.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Highlight." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Coloring" data-service="Highlight"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Peek a Boo / Hidden Color</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~2-3 Jam</span>
+                </div>
+                <p>Sentuhan warna kontras tersembunyi di lapisan dalam rambut yang memukau saat rambut disibak.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Peek%20a%20Boo%20Color." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Coloring" data-service="Peek a Boo / Hidden Color"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Full Head Fashion Color (Milk Tea, Ash Blue, Lavender)</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~3-4 Jam</span>
+                </div>
+                <p>Pewarnaan warna-warna tren fashion terkini di seluruh rambut dengan formula pencerah protektif.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Fashion%20Color." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Coloring" data-service="Full Head Fashion Color"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Color Refresh &amp; Anti-Brass Toning</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~45 mnt</span>
+                </div>
+                <p>Menetralkan undertone kekuningan/oranye pada rambut pirang serta mengembalikan kilau warna prima.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Toning%20Rambut." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Coloring" data-service="Toning"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Bleaching Protection Safe Process</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~90 mnt</span>
+                </div>
+                <p>Pencerahan warna dasar rambut menggunakan formula protector untuk mencegah batang rambut rapuh.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20tanya%20Bleaching." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Coloring" data-service="Bleaching"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Extra Olaplex &amp; Smartplex Protection</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> Add-on</span>
+                </div>
+                <p>Perlindungan ikatan disulfida rambut saat proses kimia berlangsung agar rambut tetap selembut sutra.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20tambah%20Olaplex." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Coloring" data-service="Extra Olaplex Protection"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PANE 3: REPAIR, KERATIN & PERM -->
+          <div class="catalog-pane" id="p-treatment">
+            <div class="pane-header-info">
+              <h4><i class="fa-solid fa-shield-heart"></i> Hair Repair, Keratin &amp; Texture</h4>
+              <p>Solusi untuk rambut rusak, megar, kering, serta layanan pelurusan halus dan pengeritingan bervolume.</p>
+            </div>
+            <div class="catalog-items-grid">
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Hair Keratin Restoration</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~2 Jam</span>
+                </div>
+                <p>Best Seller perbaikan rambut rusak/megar agar lurus alami, tidak kaku, lembut, dan bebas kusut berbulan-bulan.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Hair%20Keratin%20Restoration." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Treatment" data-service="Hair Keratin Treatment"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Keratin Filler (Nutrisi Rambut Keropos)</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~90 mnt</span>
+                </div>
+                <p>Mengisi pori-pori batang rambut yang rapuh akibat bleaching/catok berulang agar padat dan sehat kembali.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Keratin%20Filler." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Treatment" data-service="Keratin Filler"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Collagen Smoothing Treatment</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~2,5 Jam</span>
+                </div>
+                <p>Pelurusan rambut diperkaya nutrisi kolagen untuk kelembutan ekstra, tidak lepek, dan berkilau alami.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Collagen%20Smoothing." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Treatment" data-service="Collagen Smoothing Treatment"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Signature Silk Straight</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~3 Jam</span>
+                </div>
+                <p>Pelurusan rambut jatuh lurus berkilau bagai sutra alami dengan hasil lurus elegan tahan lama.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Signature%20Silk%20Straight." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Treatment" data-service="Signature Silk Straight"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Keratin Blow Perm (Korean Wave)</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~2,5 Jam</span>
+                </div>
+                <p>Teknik pelurusan di bagian atas dengan lengkungan gelombang bervolume natural di ujung rambut khas Korea.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Korean%20Blow%20Perm." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Treatment" data-service="Keratin Blow Perm (Korean Wave)"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Down Perm (Rambut Samping Rapi)</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~45 mnt</span>
+                </div>
+                <p>Merapikan rambut samping yang mengembang dan jegrik agar turun rapi menempel sempurna.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Down%20Perm." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Treatment" data-service="Down Perm"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Traditional &amp; Blow Perming</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~2 Jam</span>
+                </div>
+                <p>Pengeritingan permanen bergelombang natural yang memudahkan penataan harian tanpa perlu catok.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Blow%20Perm." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Treatment" data-service="Blow Perm"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Intensive Hair Spa (L'Oreal / Keratin)</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~60 mnt</span>
+                </div>
+                <p>Formula profesional L'Oreal &amp; keratin untuk perbaikan serat rambut intensif disertai pijat leher relaksasi.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Hair%20Spa." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Treatment" data-service="Hair Spa L'Oreal"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Creambath Aromatherapy &amp; Tradisional</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~60 mnt</span>
+                </div>
+                <p>Pilihan aroma Makarizo (Coklat, Strawberry, Mint, Vanila) atau herbal alami (Lidah Buaya, Ginseng, Alpukat).</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Creambath." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Treatment" data-service="Creambath Makarizo (Coklat, Strawberry, Vanila, Mint)"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Damage Control Hair Mask</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~60 mnt</span>
+                </div>
+                <p>Masker pelembap pekat untuk rambut kering akibat sering terpapar matahari dan alat pemanas styling.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Hair%20Mask." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Treatment" data-service="Repair & Damage Control Mask"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PANE 4: NAILS, FACE & SPA -->
+          <div class="catalog-pane" id="p-spa">
+            <div class="pane-header-info">
+              <h4><i class="fa-solid fa-hand-sparkles"></i> Nails, Face &amp; Women's Wellness Lounge</h4>
+              <p>Perawatan menyeluruh dari kuku tangan/kaki, wajah glowing, hingga relaksasi tubuh putri keraton.</p>
+            </div>
+            <div class="catalog-items-grid">
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Manicure &amp; Pedicure Package</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~75 mnt</span>
+                </div>
+                <p>Paket komplit pembersihan kutikula, pembentukan kuku, scrub, dan pengkilapan kuku tangan &amp; kaki.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Mani%20Pedi%20Package." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Spa" data-service="Manicure & Pedicure Package"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Spa Manicure &amp; Spa Pedicure</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~60 mnt</span>
+                </div>
+                <p>Perawatan kuku mewah dengan garam spa aromatik, scrub eksfoliasi kulit mati, dan pijatan lembut.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Spa%20Pedicure." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Spa" data-service="Spa Pedicure (Scrub & Spa Salt)"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Gel Polish &amp; Glamour Nail Art</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~60 mnt</span>
+                </div>
+                <p>Aplikasi kutek gel tahan lama anti-gores dipadukan karya seni lukis kuku eksklusif dan nail tip.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Nail%20Art." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Spa" data-service="Nail Art"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Brightening Facial Treatment</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~60 mnt</span>
+                </div>
+                <p>Pembersihan komedo higienis, eksfoliasi lembut, dan masker pencerah untuk kulit glowing bercahaya.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Brightening%20Facial." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Spa" data-service="Brightening Facial Treatment"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Totok Wajah Relaksasi &amp; Aura</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~45 mnt</span>
+                </div>
+                <p>Akupresur titik-titik meridian wajah melancarkan sirkulasi, meredakan ketegangan mata, dan mencerahkan aura wajah.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Totok%20Wajah." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Spa" data-service="Totok Wajah Relaksasi"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Eyelash Extension Lentik Alami</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~90 mnt</span>
+                </div>
+                <p>Pemasangan bulu mata helai demi helai yang sangat ringan, lentik tahan lama, dan tidak menusuk mata.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Eyelash%20Extension." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Spa" data-service="Eyelash Extension"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Lulur Tradisional Keraton + Body Massage</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~90 mnt</span>
+                </div>
+                <p>Pemanjaan tubuh menyeluruh dengan pijatan minyak aromatik esensial dan baluran lulur rempah wangi.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Lulur%20Massage." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Spa" data-service="Lulur + Body Massage"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Ratus Wangi (Herbal Steam)</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~30 mnt</span>
+                </div>
+                <p>Uap herbal rempah tradisional pilihan untuk menjaga kesegaran, kebersihan, dan kenyamanan wanita.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Ratus%20Wangi." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Spa" data-service="Ratus (Herbal Steam)"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+              <div class="catalog-card-item">
+                <div class="cat-item-top">
+                  <h5>Make Up &amp; Hair Do Spesial</h5>
+                  <span class="badge-duration"><i class="fa-solid fa-clock"></i> ~75 mnt</span>
+                </div>
+                <p>Riasan wajah profesional dan sanggul/styling modern untuk wisuda, pesta, maupun momen berharga Anda.</p>
+                <div class="cat-item-actions">
+                  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20Makeup%20Hairdo." target="_blank" class="btn-item-wa"><i class="fa-brands fa-whatsapp"></i> Tanya Biaya</a>
+                  <a href="#booking" class="btn-item-book quick-book-btn" data-category="Spa" data-service="Make Up"><i class="fa-solid fa-calendar-plus"></i> Book Slot</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Transparency & Consultation Notice -->
+        <div class="catalog-pricing-notice">
+          <div class="notice-icon"><i class="fa-solid fa-circle-question"></i></div>
+          <div class="notice-content">
+            <h5>Informasi Transparansi &amp; Konsultasi Estimasi Biaya</h5>
+            <p>
+              Di <strong>Aeryn Salon</strong>, kami berkomitmen memberikan hasil terbaik dengan transparansi penuh. Karena kebutuhan obat pewarnaan dan treatment sangat bergantung pada <strong>panjang, ketebalan, dan kondisi riwayat rambut Anda</strong>, tim master stylist kami menyediakan <strong>Konsultasi Gratis via WhatsApp</strong>. Anda dapat mengirimkan foto kondisi rambut saat ini untuk mendapatkan rekomendasi perawatan serta estimasi biaya yang pasti sebelum datang ke salon.
+            </p>
+            <a href="https://wa.me/6281316801311?text=Halo%20Stylist%20Aeryn%20Salon,%20saya%20ingin%20konsultasi%20foto%20rambut%20dan%20tanya%20estimasi%20biaya." target="_blank" class="btn btn-outline-gold btn-sm">
+              <i class="fa-brands fa-whatsapp"></i> Kirim Foto Rambut untuk Konsultasi Gratis
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <!-- END RESTRUCTURED CATALOG -->
+
+    </div>
+  </section>
+
+  <!-- Lookbook / Gallery Showcase -->
+  <section id="lookbook" class="gallery-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Portofolio Asli</span>
+        <h2 class="section-title">The Signature Lookbook</h2>
+        <p class="section-subtitle">Galeri mahakarya penataan dan pewarnaan rambut autentik oleh stylist Aeryn Salon. Klik foto untuk melihat detail resolusi tinggi.</p>
+      </div>
+
+      <!-- Gallery Filter Pills -->
+      <div class="gallery-filters">
+        <button class="gallery-filter-btn active" data-filter="all">Semua Koleksi</button>
+        <button class="gallery-filter-btn" data-filter="balayage">Balayage</button>
+        <button class="gallery-filter-btn" data-filter="blonde">Blonde &amp; Brown</button>
+        <button class="gallery-filter-btn" data-filter="keratin">Keratin Smooth</button>
+        <button class="gallery-filter-btn" data-filter="creative">Creative Colors</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+
+        <div class="gallery-item" data-category="balayage">
+          <img src="images/Ashblonde%20bayalage.jpg" alt="Ash Blonde Balayage" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Ash Blonde Balayage</h5>
+            <span>Balayage &amp; Toning</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="blonde">
+          <img src="images/Caramel%20Blonde%20full%20color.jpg" alt="Caramel Blonde Full Color" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Caramel Blonde</h5>
+            <span>Full Gloss Color</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="balayage">
+          <img src="images/Ashbrown%20highlight%20balayage.jpg" alt="Ash Brown Highlight Balayage" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Ash Brown Highlight</h5>
+            <span>Dimensional Balayage</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="keratin">
+          <img src="images/Hair%20keratin.jpg" alt="Hair Keratin Straight & Silky" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Keratin Silk Straight</h5>
+            <span>Intense Smoothing</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="blonde">
+          <img src="images/Milk%20tea%20ashblonde.jpg" alt="Milk Tea Ash Blonde" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Milk Tea Ash Blonde</h5>
+            <span>Korean Ash Tone</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="balayage">
+          <img src="images/Soft%20balayage%20ashbrown.jpg" alt="Soft Balayage Ash Brown" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Soft Ash Brown</h5>
+            <span>Natural Balayage</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="creative">
+          <img src="images/ash%20blue%20hair%20color.jpg" alt="Ash Blue Creative Color" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Ash Blue Metallic</h5>
+            <span>Avant-Garde Color</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="blonde">
+          <img src="images/coloring.jpg" alt="Vibrant Salon Coloring" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Signature Coloring Art</h5>
+            <span>Salon Studio</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="balayage creative">
+          <img src="images/filosofi_aeryn_salon.jpg" alt="Purple Lavender Balayage Aeryn Salon" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <h5>Purple Lavender Balayage</h5>
+            <span>Balayage &amp; Creative Tone</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Gallery Images -->
+  <div id="lightboxModal" class="lightbox-modal">
+    <div class="lightbox-content">
+      <button id="lightboxClose" class="lightbox-close" aria-label="Tutup Pratinjau Foto">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightboxImg" class="lightbox-img" src="" alt="Zoomed Lookbook Photo">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual-composition">
+          <img src="images/filosofi_aeryn_salon.jpg" alt="Filosofi Aeryn Salon - Master Balayage & Color Lounge" class="about-main-img">
+          <div class="about-badge-card">
+            <h4>100%</h4>
+            <p>Hygienic Tools &amp; Premium International Standard</p>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="section-tag">Filosofi Butik Kami</span>
+          <h2>Sentuhan Kasih &amp; Keahlian untuk Pesona Autentik Anda</h2>
+          <p>
+            Di <strong>Aeryn Salon</strong>, kami percaya bahwa kecantikan sejati terpancar saat Anda merasa percaya diri dan nyaman dengan diri Anda. Setiap perawatan dirancang dengan pendekatan personal yang menempatkan kesehatan rambut dan kenyamanan Anda sebagai prioritas utama.
+          </p>
+          <p>
+            Kami menggunakan teknik mutakhir dan formula pewarnaan internasional yang tidak hanya menghasilkan warna memukau, namun tetap mengunci kelembapan dan kekuatan serat rambut Anda.
+          </p>
+
+          <div class="about-features-list">
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i> Konsultasi Warna Personal &amp; Undertone Kulit
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i> Formula Ramah Rambut Bebas Bau Menyengat
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i> Ruangan VIP Bersih, Nyaman &amp; Ber-AC Dingin
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i> Perawatan Khusus Rambut Sensitif &amp; Rusak
+            </div>
+          </div>
+
+          <a href="#booking" class="btn btn-gold">
+            <i class="fa-solid fa-calendar-check"></i> Reservasi Kunjungan Anda
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive WhatsApp Booking Engine (2-Step Cascading) -->
+  <section id="booking" class="booking-section">
+    <div class="container">
+      <div class="booking-wrapper">
+        <!-- Sidebar Info -->
+        <div class="booking-sidebar">
+          <div>
+            <span class="section-tag" style="color:var(--gold-light);">Reservasi Mudah &amp; Cepat</span>
+            <h3>Booking Jadwal via WhatsApp</h3>
+            <p>Tentukan kategori dan layanan favorit Anda. Sistem pintar kami akan otomatis menyusun format pesan WhatsApp yang rapi ke admin salon.</p>
+
+            <div class="booking-steps-list">
+              <div class="booking-step">
+                <div class="step-number">1</div>
+                <div class="step-info">
+                  <h5>Pilih Kategori &amp; Layanan</h5>
+                  <p>Layanan otomatis tersaring rapi tanpa daftar panjang membingungkan.</p>
+                </div>
+              </div>
+              <div class="booking-step">
+                <div class="step-number">2</div>
+                <div class="step-info">
+                  <h5>Pilih Tanggal &amp; Jam Kedatangan</h5>
+                  <p>Tersedia slot jam pasti sesuai jadwal operasional salon.</p>
+                </div>
+              </div>
+              <div class="booking-step">
+                <div class="step-number">3</div>
+                <div class="step-info">
+                  <h5>Konfirmasi WhatsApp Cepat</h5>
+                  <p>Admin salon akan segera mengunci slot jadwal kunjungan Anda.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-direct-wa">
+            <strong><i class="fa-brands fa-whatsapp"></i> Butuh Konsultasi Lebih Dulu?</strong>
+            <span>Belum yakin memilih treatment yang tepat? Chat stylist kami langsung di: <strong>0813 1680 1311</strong></span>
+          </div>
+        </div>
+
+        <!-- Booking Form Container -->
+        <div class="booking-form-container">
+          <form id="whatsappBookingForm">
+            <div class="form-grid">
+
+              <!-- Name -->
+              <div class="form-group">
+                <label for="bookName">Nama Lengkap Anda *</label>
+                <input type="text" id="bookName" class="form-input" placeholder="Contoh: Amanda Clarissa" required>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="bookPhone">Nomor WhatsApp Aktif *</label>
+                <input type="tel" id="bookPhone" class="form-input" placeholder="08xxxxxxxxxx" required>
+              </div>
+
+              <!-- Step 1: Category Filter (Cascading) -->
+              <div class="form-group">
+                <label for="bookCategory">1. Kategori Layanan *</label>
+                <select id="bookCategory" class="form-select" required>
+                  <option value="" disabled selected>-- Pilih Kategori --</option>
+                  <option value="Haircut">✂️ 1. Haircut &amp; Styling</option>
+                  <option value="Coloring">🎨 2. Hair Color &amp; Balayage</option>
+                  <option value="Treatment">💆 3. Hair Repair, Keratin &amp; Perm</option>
+                  <option value="Spa">✨ 4. Nails, Facial &amp; Spa Lounge</option>
+                </select>
+              </div>
+
+              <!-- Step 2: Filtered Sub-Service -->
+              <div class="form-group">
+                <label for="bookService">2. Pilihan Layanan / Treatment *</label>
+                <select id="bookService" class="form-select" required disabled>
+                  <option value="" disabled selected>-- Pilih Kategori Dulu di Sebelah Kiri --</option>
+                </select>
+              </div>
+
+              <!-- Hair Length (Optional but very helpful for salons) -->
+              <div class="form-group">
+                <label for="bookHairLength">Panjang Rambut Saat Ini</label>
+                <select id="bookHairLength" class="form-select">
+                  <option value="Pendek (Di atas bahu)">Pendek (Di atas bahu)</option>
+                  <option value="Sedang (Sebahu)" selected>Sedang (Sebahu)</option>
+                  <option value="Panjang (Lewat bahu)">Panjang (Lewat bahu)</option>
+                  <option value="Extra Long (Pinggang)">Extra Long (Pinggang)</option>
+                  <option value="Tidak Perlu (Layanan Kuku/Spa)">Tidak Perlu (Khusus Kuku / Spa)</option>
+                </select>
+              </div>
+
+              <!-- Date -->
+              <div class="form-group">
+                <label for="bookDate">Rencana Tanggal Kunjungan *</label>
+                <input type="date" id="bookDate" class="form-input" required>
+              </div>
+
+              <!-- Smart Time Slot (No more manual messy text!) -->
+              <div class="form-group full-width">
+                <label for="bookTime">Pilihan Jam Kedatangan (Slot Operasional: 09.00 - 19.00 WIB) *</label>
+                <select id="bookTime" class="form-select" required>
+                  <option value="" disabled selected>-- Pilih Jam Kedatangan --</option>
+                  <option value="09:30 WIB (Pagi)">09:30 WIB (Pagi)</option>
+                  <option value="11:00 WIB (Siang)">11:00 WIB (Siang)</option>
+                  <option value="13:00 WIB (Siang)">13:00 WIB (Siang)</option>
+                  <option value="14:30 WIB (Sore)">14:30 WIB (Sore)</option>
+                  <option value="16:00 WIB (Sore)">16:00 WIB (Sore)</option>
+                  <option value="17:30 WIB (Sore Menjelang Malam)">17:30 WIB (Sore Menjelang Malam)</option>
+                </select>
+              </div>
+
+              <!-- Notes -->
+              <div class="form-group full-width">
+                <label for="bookNotes">Catatan Khusus (Kondisi Rambut / Request Model)</label>
+                <textarea id="bookNotes" class="form-textarea" placeholder="Contoh: Rambut pernah di-smoothing 6 bulan lalu, ingin potong layer sebahu dan tanya estimasi warna..."></textarea>
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-gold booking-submit-btn">
+              <i class="fa-brands fa-whatsapp"></i> Kirim Permintaan Reservasi ke WhatsApp
+            </button>
+            <p style="font-size:0.75rem; color:#888; text-align:center; margin-top:10px;">
+              *Admin Aeryn Salon akan segera membalas untuk konfirmasi slot dan memberikan estimasi biaya transparan.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Client Reviews -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Ulasan Klien</span>
+        <h2 class="section-title">Kepuasan &amp; Cerita Pelanggan Setia</h2>
+        <p class="section-subtitle">Lebih dari ribuan transformasi telah dipercayakan kepada kami. Inilah pengalaman berkesan mereka di Aeryn Salon.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Hasil Ash Blonde Balayage-nya beneran di luar ekspektasi! Halus banget gradasinya, rambut sama sekali nggak kering atau rapuh karena produk bleaching-nya premium. Tempatnya bersih dan pelayanannya sangat ramah."
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">CL</div>
+            <div class="reviewer-details">
+              <h5>Clarissa Lavinia</h5>
+              <span>Klien Balayage Regular</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Keratin treatment di Aeryn Salon penyelamat rambut rusakku! Rambut yang tadinya megar dan kusam sekarang jatuh rapi dan berkilau alami. Nggak perlu catok lama lagi tiap pagi. Recomended banget!"
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">NP</div>
+            <div class="reviewer-details">
+              <h5>Nadia Pramesti</h5>
+              <span>Klien Keratin Restoration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Stylist-nya detail banget dengerin request bentuk muka dan gaya hidup kita sebelum gunting rambut. Hasil potongannya tahan lama dan gampang di-styling sendiri di rumah. Suasana salonnya juga berkelas."
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">VM</div>
+            <div class="reviewer-details">
+              <h5>Valerie Michelle</h5>
+              <span>Klien Precision Haircut</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location, Hours & Amenities -->
+  <section id="location" class="location-section">
+    <div class="container">
+      <div class="location-grid">
+        <!-- Info Card -->
+        <div class="location-card">
+          <span class="section-tag">Studio &amp; Fasilitas</span>
+          <h3>Kunjungi Studio Aeryn Salon</h3>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="info-text">
+              <h5>Alamat Studio Salon</h5>
+              <p>Jalan Limo Raya No.39 (Tepat di Depan SPBU VIVO), Limo, Kota Depok, Jawa Barat 16515</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="info-text">
+              <h5>Jam Operasional</h5>
+              <p><strong style="color:var(--gold-dark);">BUKA SETIAP HARI (SENIN – MINGGU)</strong><br>09.00 AM – 19.00 PM WIB</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="info-text">
+              <h5>Hotline &amp; Konsultasi</h5>
+              <p>WhatsApp: +62 813-1680-1311<br>Instagram: <a href="https://instagram.com/aerynsalon" target="_blank" style="color:var(--gold-dark); text-decoration:underline;">@aerynsalon</a><br>Email: aerynsalon@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Amenities Strip -->
+          <div class="amenities-strip">
+            <div class="amenity-box">
+              <i class="fa-solid fa-snowflake"></i>
+              Ruang AC Dingin
+            </div>
+            <div class="amenity-box">
+              <i class="fa-solid fa-wifi"></i>
+              Free High WiFi
+            </div>
+            <div class="amenity-box">
+              <i class="fa-solid fa-square-parking"></i>
+              Parkir Nyaman
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="map-wrapper">
+          <iframe 
+            src="https://maps.google.com/maps?q=-6.3671201,106.7749544(AERYN+SALON)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokasi AERYN SALON - Jl. Limo Raya No.39, Limo, Kec. Limo, Kota Depok, Jawa Barat 16515">
+          </iframe>
+          <div class="map-overlay-card">
+            <a href="https://www.google.com/maps/dir//AERYN+SALON,+Jl.+Limo+Raya+No.39,+Limo,+Kec.+Limo,+Kota+Depok,+Jawa+Barat+16515/@-6.3671201,106.7749544,17z/" target="_blank" class="btn btn-gold btn-sm">
+              <i class="fa-solid fa-diamond-turn-right"></i> Buka Petunjuk Rute di Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Luxury Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <h2>AERYN SALON</h2>
+          <span class="gold">Haute Coiffure &amp; Beauty Lounge</span>
+          <p>Destinasi perawatan rambut dan kecantikan butik premium di Depok yang memprioritaskan kesehatan rambut, keanggunan, dan kenyamanan eksklusif setiap klien.</p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com/aerynsalon" target="_blank" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank" class="social-icon-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/6281316801311" target="_blank" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.google.com/maps/dir//AERYN+SALON,+Jl.+Limo+Raya+No.39,+Limo,+Kec.+Limo,+Kota+Depok,+Jawa+Barat+16515/@-6.3671201,106.7749544,17z/" target="_blank" class="social-icon-btn" aria-label="Lokasi Google Maps"><i class="fa-solid fa-map-pin"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h5>Navigasi Cepat</h5>
+          <ul class="footer-links-list">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#hair-finder">Solusi Kebutuhan Rambut</a></li>
+            <li><a href="#services">Menu Layanan &amp; Treatment</a></li>
+            <li><a href="#lookbook">Koleksi Lookbook</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#location">Lokasi &amp; Jam Buka</a></li>
+          </ul>
+        </div>
+
+        <!-- Signature Treatments -->
+        <div class="footer-col">
+          <h5>Signature Care</h5>
+          <ul class="footer-links-list">
+            <li><a href="#services">Ash Blonde Balayage</a></li>
+            <li><a href="#services">Caramel Blonde Color</a></li>
+            <li><a href="#services">Hair Keratin Restoration</a></li>
+            <li><a href="#services">Collagen Smoothing</a></li>
+            <li><a href="#services">Women's Signature Haircut</a></li>
+            <li><a href="#services">Glamour Nail Art</a></li>
+          </ul>
+        </div>
+
+        <!-- Operational & Contact -->
+        <div class="footer-col">
+          <h5>Kontak &amp; Reservasi</h5>
+          <ul class="footer-links-list">
+            <li style="color:#C4BEB4;"><i class="fa-solid fa-phone" style="color:var(--gold-primary); margin-right:8px;"></i> +62 813-1680-1311</li>
+            <li style="color:#C4BEB4;"><i class="fa-solid fa-envelope" style="color:var(--gold-primary); margin-right:8px;"></i> aerynsalon@gmail.com</li>
+            <li style="color:#C4BEB4;"><i class="fa-brands fa-instagram" style="color:var(--gold-primary); margin-right:8px;"></i> @aerynsalon</li>
+            <li style="color:#C4BEB4;"><i class="fa-solid fa-clock" style="color:var(--gold-primary); margin-right:8px;"></i> Buka Setiap Hari: 09.00 – 19.00 WIB</li>
+            <li style="color:#C4BEB4; font-size:0.85rem; margin-top:4px;"><i class="fa-solid fa-location-dot" style="color:var(--gold-primary); margin-right:8px;"></i> Jl. Limo Raya No.39 (Depan SPBU VIVO) Depok</li>
+            <li style="margin-top: 10px;">
+              <span class="badge-gold">
+                <i class="fa-solid fa-users"></i> Pengunjung: <span id="visitorCounter">103</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>AERYN SALON</strong>. All Rights Reserved. Domain Resmi: <a href="https://aerynsalon.my.id/" style="color:var(--gold-light);">aerynsalon.my.id</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Action Button -->
+  <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20konsultasi%20perawatan%20rambut%20dan%20reservasi." target="_blank" class="floating-wa-btn" aria-label="Chat WhatsApp Admin Salon">
+    <span class="wa-beacon-ring"></span>
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Mobile Sticky Bottom Action Bar (Wajib untuk Salon Ramah Pelanggan di HP) -->
+  <div class="mobile-sticky-bar">
+    <a href="#treatmentCatalog" class="sticky-btn">
+      <i class="fa-solid fa-book-open"></i>
+      <span>Menu Layanan</span>
+    </a>
+    <a href="https://www.google.com/maps/dir//AERYN+SALON,+Jl.+Limo+Raya+No.39,+Limo,+Kec.+Limo,+Kota+Depok,+Jawa+Barat+16515/@-6.3671201,106.7749544,17z/" target="_blank" class="sticky-btn">
+      <i class="fa-solid fa-map-location-dot"></i>
+      <span>Rute Lokasi</span>
+    </a>
+    <a href="https://wa.me/6281316801311?text=Halo%20Admin%20Aeryn%20Salon,%20saya%20ingin%20konsultasi%20dan%20reservasi." target="_blank" class="sticky-btn highlight">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Chat WA Salon</span>
+    </a>
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
